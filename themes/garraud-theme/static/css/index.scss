@@ -1,0 +1,11 @@
+@import 'base/global';
+@import 'base/reset';
+
+@import 'utilities/variables';
+
+// Section
+@import 'sections/header';
+@import 'sections/footer';
+
+// Pages
+@import 'pages/home';

@@ -1,3 +1,24 @@
 baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+languageCode = "fr-FR"
+title = "Quentin GARRAUD"
+theme = "garraud-theme"
+enableRobotsTXT = "false"
+
+
+#### Plugins ####
+[params.plugins]
+    ## Styles plugins ##
+    [[params.plugins.styles]]
+    URL = "/styles/index.css"
+
+    ## Script plugins ##
+    [[params.plugins.js]]
+    URL = ""
+
+
+##### Paramètres par défauts #####
+[params]
+    description = "Développeur Front End en alternance au CESI de Bordeaux chez Solidnames."
+    favicon = "/images/favicon.png"
+    slogan = "Développeur Front End chez Solidnames"
+
