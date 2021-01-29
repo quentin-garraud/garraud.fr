@@ -1,0 +1,16 @@
+{
+    "version": 3,
+    "mappings": "AECA,UAAU;EACN,WAAW,EAAE,mBAAmB;EAChC,GAAG,EAAE,wDAAwD;;;AAEjE,UAAU;EACN,WAAW,EAAE,kBAAkB;EAC/B,GAAG,EAAE,uDAAuD;;;AAEhE,UAAU;EACN,WAAW,EAAE,oBAAoB;EACjC,GAAG,EAAE,yDAAyD;;;AAIlE,UAAU;EACN,WAAW,EAAE,eAAe;EAC5B,GAAG,EAAE,iDAAiD;;;AAE1D,UAAU;EACN,WAAW,EAAE,cAAc;EAC3B,GAAG,EAAE,gDAAgD",
+    "sources": [
+        "index.scss",
+        "utilities/_variables.scss",
+        "utilities/_fonts.scss",
+        "base/_global.scss",
+        "base/_reset.scss",
+        "sections/_header.scss",
+        "sections/_footer.scss",
+        "pages/_home.scss"
+    ],
+    "names": [],
+    "file": "index.css"
+}
