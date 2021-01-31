@@ -109,10 +109,14 @@ a.btn-link:hover {
   padding-bottom: 10px;
 }
 
+.card p {
+  font-size: 0.75rem;
+}
+
 header.header {
   background-color: #022222;
   padding: 20px;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #3E3E3E;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
