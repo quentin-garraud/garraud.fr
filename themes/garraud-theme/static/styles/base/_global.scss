@@ -1,0 +1,35 @@
+a, a:visited{
+    color: $color-primary-light;
+}
+a:hover, a:active{
+    color: $color-primary;
+}
+p{
+    color: $color-primary-light;
+    font-family: $body-light;
+    line-height: 20px;
+}
+strong{
+    font-family: $body-bold;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: $heading-black;
+    color: $color-primary-light;
+}
+h1{
+    font-size: $h1-font-size-mobile;
+}
+h2{
+    font-size: $h2-font-size-mobile;
+}
+h3{
+    font-size: $h3-font-size-mobile;
+}
+img{
+    max-width: 100%;
+    width: 100%;
+}
+.container{
+    padding: 20px;
+    margin: 0 auto;
+}

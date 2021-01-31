@@ -23,13 +23,172 @@
   src: url(../../assets/fonts/poppins/Poppins-Bold.ttf);
 }
 
-body {
-  font-size: 10px;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-@media only screen and (min-width: 640px) {
-  body {
-    font-size: 110px;
-  }
+a, a:hover, a:visited, a:active {
+  text-decoration: none;
+}
+
+a, a:visited {
+  color: #FFFFFF;
+}
+
+a:hover, a:active {
+  color: #F9C722;
+}
+
+p {
+  color: #FFFFFF;
+  font-family: "Poppins Light";
+  line-height: 20px;
+}
+
+strong {
+  font-family: "Poppins Bold";
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Noe Display Black";
+  color: #FFFFFF;
+}
+
+h1 {
+  font-size: 1.875rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.container {
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.btn-tag, .btn-tag:hover, .btn-tag:active {
+  background-color: #F9C722;
+  color: black;
+  padding: 11px 20px;
+  font-family: "Poppins Bold";
+}
+
+a.btn-link {
+  color: #FFFFFF;
+  font-family: "Poppins Light";
+}
+
+a.btn-link:hover {
+  color: #F9C722;
+}
+
+.card {
+  border: 1px solid #3E3E3E;
+  margin-bottom: 16px;
+  padding: 14px 14px 20px 14px;
+  width: 40%;
+}
+
+.card img {
+  width: 20%;
+  margin: 36px 0;
+}
+
+.card h3 {
+  padding-bottom: 10px;
+}
+
+header.header {
+  background-color: #022222;
+  padding: 20px;
+  border-bottom: 1px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+}
+
+header.header .burger-menu {
+  width: 50px;
+  background-color: white;
+}
+
+header.header img.logo {
+  display: block;
+  margin: 0 auto;
+  width: 17%;
+}
+
+footer {
+  background-color: #022222;
+  padding: 10px 10px;
+}
+
+footer p {
+  text-align: center;
+  font-size: 0.6875rem;
+}
+
+section.hero {
+  padding: 50px 0;
+  background-color: #022222;
+}
+
+section.hero h1.hero__title {
+  font-size: 53px;
+  line-height: 55px;
+  padding-top: 22px;
+}
+
+section.hero h1.hero__title span {
+  color: #F9C722;
+}
+
+section.hero h4.hero__subtitle {
+  font-size: 1rem;
+  color: #F9C722;
+  letter-spacing: 1px;
+  font-family: "Noe Display Bold";
+}
+
+section.hero p.hero__paragraph {
+  padding: 10px 0 0 0;
+}
+
+section.hero p.hero__paragraph span {
+  font-family: "Poppins Bold";
+}
+
+section.hero div.hero__button {
+  margin-top: 30px;
+}
+
+section.card-hero {
+  padding: 0 20px;
+  background-color: #022222;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=index.css.map */

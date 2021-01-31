@@ -1,4 +1,38 @@
+section.hero{
+    padding: 50px 0;
+    background-color: $color-primary-dark;
 
-  @media only screen and (min-width: 640px){
+    h1.hero__title{
+        font-size: 53px;
+        line-height: 55px;
+        padding-top: 22px;
 
-  }
+        span{
+            color: $color-primary;
+        }
+    }
+    h4.hero__subtitle{
+        font-size:  $h3-font-size-mobile;
+        color: $color-primary;
+        letter-spacing: 1px;
+        font-family: $heading-bold;
+    }
+    p.hero__paragraph{
+        padding: 10px 0 0 0;
+        span{
+            font-family: $body-bold;
+        }
+    }
+    div.hero__button{
+        margin-top: 30px;
+    }
+}
+
+section.card-hero{
+    padding: 0 20px;
+    background-color: $color-primary-dark;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    
+}

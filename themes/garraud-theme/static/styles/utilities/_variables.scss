@@ -1,9 +1,9 @@
-////// Déclaration des couleurs
+////// Déclaration des couleurs //////
 $color-primary-dark: #022222;
 $color-primary: #F9C722;
 $color-primary-light: #FFFFFF;
 
-////// Déclaration des fonts
+////// Déclaration des fonts //////
 
 // Heading
 $heading-black: 'Noe Display Black';
@@ -12,5 +12,19 @@ $heading-medium: 'Noe Display Medium';
 
 // Body
 $body-light: 'Poppins Light';
-$body-bold: 'Poppins Light';
+$body-bold: 'Poppins Bold';
 
+
+////// Déclaration des tailles //////
+$body-font-size-mobile: 0.9rem;
+$body-font-size-desktop: 1rem;
+
+$h1-font-size-mobile: 1.875rem;
+$h2-font-size-mobile: 1.5rem;
+$h3-font-size-mobile: 1rem;
+$h4-font-size-mobile: 0.875rem;
+
+
+$h1-font-size-desktop: 0.9rem;
+$h2-font-size-desktop: 0.9rem;
+$h3-font-size-desktop: 0.9rem;
