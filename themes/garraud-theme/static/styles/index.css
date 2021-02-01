@@ -32,39 +32,53 @@ a, a:hover, a:visited, a:active {
   text-decoration: none;
 }
 
-a, a:visited {
-  color: #FFFFFF;
-}
-
-a:hover, a:active {
-  color: #F9C722;
-}
-
-p {
-  color: #FFFFFF;
-  font-family: "Poppins Light";
-  line-height: 20px;
-}
-
-strong {
-  font-family: "Poppins Bold";
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Noe Display Black";
-  color: #FFFFFF;
-}
-
 h1 {
   font-size: 1.875rem;
+  font-family: "Noe Display Black", serif;
+  line-height: 37px;
+  color: #FFFFFF;
 }
 
 h2 {
   font-size: 1.5rem;
+  font-family: "Noe Display Black", serif;
+  line-height: 22px;
+  color: #FFFFFF;
 }
 
 h3 {
   font-size: 1rem;
+  font-family: "Noe Display Bold", serif;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+h4 {
+  font-size: 0.875rem;
+  font-family: "Noe Display Bold", serif;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+a {
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  font-family: "Poppins Light", Arial, sans-serif;
+  color: #FFFFFF;
+}
+
+p {
+  line-height: 18px;
+  font-size: 0.75rem;
+  color: #FFFFFF;
+  font-family: "Poppins Light", Arial, sans-serif;
+}
+
+strong {
+  line-height: 18px;
+  font-size: 0.75rem;
+  color: #FFFFFF;
+  font-family: "Poppins Bold", Arial, sans-serif;
 }
 
 img {
@@ -72,45 +86,48 @@ img {
   width: 100%;
 }
 
-.container {
-  padding: 20px;
-  margin: 0 auto;
-}
-
-.btn-tag, .btn-tag:hover, .btn-tag:active {
-  background-color: #F9C722;
-  color: black;
+.tag-category {
   padding: 11px 20px;
-  font-family: "Poppins Bold";
+  background-color: #F9C722;
+  color: #000;
+  font-family: "Poppins Bold", Arial, sans-serif;
+  display: inline-block;
 }
 
-a.btn-link {
+.link-button {
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  font-family: "Poppins Light", Arial, sans-serif;
   color: #FFFFFF;
-  font-family: "Poppins Light";
+  display: inline-block;
 }
 
-a.btn-link:hover {
+.link-button:hover, .link-button:active {
+  color: #F9C722;
+}
+
+.decoration {
   color: #F9C722;
 }
 
 .card {
   border: 1px solid #3E3E3E;
-  margin-bottom: 16px;
-  padding: 14px 14px 20px 14px;
+  padding: 20px 14px;
   width: 40%;
+  margin-bottom: 20px;
 }
 
-.card img {
-  width: 20%;
-  margin: 36px 0;
+.card img.icon {
+  width: 17%;
+  margin: 15px 0;
 }
 
 .card h3 {
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 .card p {
-  font-size: 0.75rem;
+  padding-top: 5px;
 }
 
 header.header {
@@ -147,43 +164,29 @@ footer p {
   font-size: 0.6875rem;
 }
 
-section.hero {
-  padding: 50px 0;
+#section-hero-banner {
   background-color: #022222;
+  padding: 50px 20px;
 }
 
-section.hero h1.hero__title {
+#section-hero-banner h1 {
+  padding-top: 22px;
   font-size: 53px;
   line-height: 55px;
-  padding-top: 22px;
 }
 
-section.hero h1.hero__title span {
-  color: #F9C722;
-}
-
-section.hero h4.hero__subtitle {
-  font-size: 1rem;
+#section-hero-banner h4 {
   color: #F9C722;
   letter-spacing: 1px;
-  font-family: "Noe Display Bold";
 }
 
-section.hero p.hero__paragraph {
-  padding: 10px 0 0 0;
+#section-hero-banner p {
+  padding: 20px 0;
 }
 
-section.hero p.hero__paragraph span {
-  font-family: "Poppins Bold";
-}
-
-section.hero div.hero__button {
-  margin-top: 30px;
-}
-
-section.card-hero {
-  padding: 0 20px;
+#cards-hero {
   background-color: #022222;
+  padding: 0 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -194,5 +197,64 @@ section.card-hero {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+#section-projects {
+  background-color: #022222;
+  padding: 60px 20px 0 20px;
+}
+
+#section-projects .project {
+  padding-bottom: 50px;
+}
+
+#section-projects .project .tag-category {
+  margin: 20px 0;
+}
+
+#section-projects .project h2 {
+  padding-bottom: 15px;
+}
+
+#section-projects .project p {
+  padding-bottom: 20px;
+}
+
+#section-outils-que-jutilise {
+  background-color: #022222;
+  padding: 20px 20px 0 20px;
+}
+
+#section-outils-que-jutilise .tag-category {
+  margin: 20px 0;
+}
+
+#section-outils-que-jutilise h2 {
+  padding-bottom: 35px;
+}
+
+#section-outils-que-jutilise p {
+  padding-bottom: 20px;
+}
+
+#section-outils-que-jutilise table {
+  color: #FFFFFF;
+  margin: 0px 0 20px 0;
+}
+
+#section-outils-que-jutilise table tbody .techno-type {
+  font-size: 0.75rem;
+  font-family: "Poppins Light", Arial, sans-serif;
+}
+
+#section-outils-que-jutilise table tbody .techno {
+  font-size: 0.75rem;
+  font-family: "Poppins Light", Arial, sans-serif;
+}
+
+#section-outils-que-jutilise table tbody td {
+  border: 1px solid #3E3E3E;
+  width: 100%;
+  padding: 17px 15px;
 }
 /*# sourceMappingURL=index.css.map */

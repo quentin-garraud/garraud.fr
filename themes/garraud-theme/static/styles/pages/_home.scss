@@ -1,39 +1,79 @@
-section.hero{
-    padding: 50px 0;
+#section-hero-banner{
     background-color: $color-primary-dark;
+    padding: 50px 20px;
 
-    h1.hero__title{
+    h1{
+        padding-top: 22px;
         font-size: 53px;
         line-height: 55px;
-        padding-top: 22px;
-
-        span{
-            color: $color-primary;
-        }
     }
-    h4.hero__subtitle{
-        font-size:  $h3-font-size-mobile;
+    h4{
         color: $color-primary;
         letter-spacing: 1px;
-        font-family: $heading-bold;
     }
-    p.hero__paragraph{
-        padding: 10px 0 0 0;
-        
-        span{
-            font-family: $body-bold;
-        }
-    }
-    div.hero__button{
-        margin-top: 30px;
+    p{
+        padding: 20px 0;
     }
 }
 
-section.card-hero{
-    padding: 0 20px;
+#cards-hero{
     background-color: $color-primary-dark;
+    padding: 0 20px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+}
+
+#section-projects{
+    background-color: $color-primary-dark;
+    padding: 60px 20px 0 20px;
     
+    .project{
+        padding-bottom: 50px;
+        .tag-category{
+            margin: 20px 0;
+        }
+        h2{
+            padding-bottom: 15px;
+        }
+        p{
+            padding-bottom: 20px;   
+        }
+    }
+}
+#section-outils-que-jutilise{
+    background-color: $color-primary-dark;
+    padding: 20px 20px 0 20px;
+
+    .tag-category{
+        margin: 20px 0;
+    }
+    h2{
+        padding-bottom: 35px;
+    }
+    p{
+        padding-bottom: 20px;   
+    }
+
+    table{
+        color: $color-primary-light;
+        margin: 0px 0 20px 0;
+        
+        tbody{
+            
+            .techno-type{
+                font-size: $caption-font-size-mobile;
+                font-family: $body-light;
+            }
+            .techno{
+                font-size: $body-font-size-mobile;                
+                font-family: $body-light;
+            }
+            td{
+                border: $border;
+                width: 100%;
+                padding: 17px 15px;
+            }
+        }
+    }
 }

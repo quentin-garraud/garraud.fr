@@ -1,35 +1,79 @@
-a, a:visited{
-    color: $color-primary-light;
-}
-a:hover, a:active{
-    color: $color-primary;
-}
-p{
-    color: $color-primary-light;
-    font-family: $body-light;
-    line-height: 20px;
-}
-strong{
-    font-family: $body-bold;
-}
-h1, h2, h3, h4, h5, h6{
+@mixin h1-mobile {
+    font-size: $h1-font-size-mobile;
     font-family: $heading-black;
+    line-height: 37px;
     color: $color-primary-light;
 }
 h1{
-    font-size: $h1-font-size-mobile;
+    @include h1-mobile;
+}
+
+
+@mixin h2-mobile {
+    font-size: $h2-font-size-mobile;
+    font-family: $heading-black;
+    line-height: 22px;
+    color: $color-primary-light;
 }
 h2{
-    font-size: $h2-font-size-mobile;
+    @include h2-mobile;
+}
+
+
+@mixin h3-mobile {
+    font-size: $h3-font-size-mobile;
+    font-family: $heading-bold;
+    line-height: 26px;
+    color: $color-primary-light;
 }
 h3{
-    font-size: $h3-font-size-mobile;
+    @include h3-mobile;
+}
+
+
+@mixin h4-mobile {
+    font-size: $h4-font-size-mobile;
+    font-family: $heading-bold;
+    line-height: 22px;
+    color: $color-primary-light;
+}
+h4{
+    @include h4-mobile;
+}
+
+@mixin link {
+    font-size: $link-font-size-mobile;
+    line-height: $line-height-mobile;
+    font-family: $body-light;
+    color: $color-primary-light;
+}
+a{
+    @include link;
+}
+
+@mixin body{
+    line-height: 18px;
+    font-size: $body-font-size-mobile;
+    color: $color-primary-light;
+}
+p{
+    @include body;
+    font-family: $body-light;
+}
+
+strong{
+    @include body;
+    font-family: $body-bold;
 }
 img{
     max-width: 100%;
     width: 100%;
 }
-.container{
-    padding: 20px;
-    margin: 0 auto;
+
+
+@mixin caption{
+    font-family: $body-light;
+    font-size: $caption-font-size-mobile;
+    line-height: $line-height-mobile;
+    color: $color-primary-light;
 }
