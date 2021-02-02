@@ -197,6 +197,13 @@ footer p {
 #section-hero-banner, #cards-hero, #section-projects, #section-outils-que-jutilise, #section-about, #section-bloom, #section-gaupx {
   background-color: #022222;
   padding: 50px 20px 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
 }
 
 #section-hero-banner h1 {

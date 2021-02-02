@@ -42,3 +42,17 @@
 .title-project{
     padding-bottom: 25px;
 }
+
+@mixin caption{
+    font-family: $body-light;
+    font-size: $caption-font-size-mobile;
+    line-height: $line-height-mobile;
+    color: $color-primary-light;
+}
+
+@mixin section-params {
+    background-color: $color-primary-dark;
+    padding: 50px 20px 0 20px;
+    display: flex;
+    flex-flow: column wrap;
+}
