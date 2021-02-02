@@ -28,3 +28,30 @@
     }
 }
 
+
+@media screen and (min-width:640px){
+    #section-projects .project:first-child {
+        padding-bottom: 140px;
+    }
+    #section-hero-banner{
+        padding: 150px 0px 90px 101px;
+
+        h1{
+            font-size: 90px;
+            line-height: 84px;
+        }
+        .summary{
+            width: 45%;
+        }
+    }
+    #cards-hero{
+        display: flex;
+        flex-flow: row;
+        padding: 0;
+        padding-left: 101px;
+    }
+    #cards-hero, #section-projects, #section-outils-que-jutilise, #section-about, #section-bloom, #section-gaupx{
+        
+        padding-left: 101px;
+    }
+}
