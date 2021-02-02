@@ -1,7 +1,8 @@
-#section-hero-banner{
-    background-color: $color-primary-dark;
-    padding: 50px 20px;
+#section-hero-banner, #cards-hero, #section-projects, #section-outils-que-jutilise, #section-about, #section-bloom, #section-gaupx{
+    @include section-params;
+}
 
+#section-hero-banner{
     h1{
         padding-top: 22px;
         font-size: 48px;
@@ -10,70 +11,19 @@
     h4{
         color: $color-primary;
         letter-spacing: 1px;
-    }
-    p{
-        padding: 20px 0;
+        padding-bottom: 20px;
     }
 }
 
 #cards-hero{
-    background-color: $color-primary-dark;
-    padding: 0 20px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
 }
 
 #section-projects{
-    background-color: $color-primary-dark;
-    padding: 60px 20px 0 20px;
-    
-    .project{
+    .project:first-child{
         padding-bottom: 50px;
-        .tag-category{
-            margin: 20px 0;
-        }
-        h2{
-            padding-bottom: 15px;
-        }
-        p{
-            padding-bottom: 20px;   
-        }
     }
 }
-#section-outils-que-jutilise{
-    background-color: $color-primary-dark;
-    padding: 20px 20px 0 20px;
 
-    .tag-category{
-        margin: 20px 0;
-    }
-    h2{
-        padding-bottom: 35px;
-    }
-    p{
-        padding-bottom: 20px;   
-    }
-
-    table{
-        color: $color-primary-light;
-        margin: 0px 0 20px 0;
-
-        tbody{
-            
-            .techno-type{
-                font-size: $caption-font-size-mobile;
-                font-family: $body-light;
-            }
-            .techno{
-                font-size: $body-font-size-mobile;                
-                font-family: $body-light;
-            }
-            td{
-                border: $border;
-                width: 100%;
-                padding: 17px 15px;
-            }
-        }
-    }
-}

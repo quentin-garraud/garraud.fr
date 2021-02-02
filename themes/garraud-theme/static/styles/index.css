@@ -86,12 +86,34 @@ img {
   width: 100%;
 }
 
+table {
+  color: #FFFFFF;
+  margin: 0px 0 20px 0;
+}
+
+table tbody .techno-type {
+  font-size: 0.75rem;
+  font-family: "Poppins Light", Arial, sans-serif;
+}
+
+table tbody .techno {
+  font-size: 0.75rem;
+  font-family: "Poppins Light", Arial, sans-serif;
+}
+
+table tbody td {
+  border: 1px solid #3E3E3E;
+  width: 100%;
+  padding: 17px 15px;
+}
+
 .tag-category {
   padding: 11px 20px;
   background-color: #F9C722;
   color: #000;
   font-family: "Poppins Bold", Arial, sans-serif;
   display: inline-block;
+  margin: 20px 0;
 }
 
 .link-button {
@@ -130,6 +152,14 @@ img {
   padding-top: 5px;
 }
 
+.summary {
+  padding-bottom: 20px;
+}
+
+.title-project {
+  padding-bottom: 25px;
+}
+
 header.header {
   background-color: #022222;
   padding: 20px;
@@ -164,9 +194,9 @@ footer p {
   font-size: 0.6875rem;
 }
 
-#section-hero-banner {
+#section-hero-banner, #cards-hero, #section-projects, #section-outils-que-jutilise, #section-about, #section-bloom, #section-gaupx {
   background-color: #022222;
-  padding: 50px 20px;
+  padding: 50px 20px 0 20px;
 }
 
 #section-hero-banner h1 {
@@ -178,15 +208,10 @@ footer p {
 #section-hero-banner h4 {
   color: #F9C722;
   letter-spacing: 1px;
-}
-
-#section-hero-banner p {
-  padding: 20px 0;
+  padding-bottom: 20px;
 }
 
 #cards-hero {
-  background-color: #022222;
-  padding: 0 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -199,62 +224,7 @@ footer p {
           justify-content: space-between;
 }
 
-#section-projects {
-  background-color: #022222;
-  padding: 60px 20px 0 20px;
-}
-
-#section-projects .project {
+#section-projects .project:first-child {
   padding-bottom: 50px;
-}
-
-#section-projects .project .tag-category {
-  margin: 20px 0;
-}
-
-#section-projects .project h2 {
-  padding-bottom: 15px;
-}
-
-#section-projects .project p {
-  padding-bottom: 20px;
-}
-
-#section-outils-que-jutilise {
-  background-color: #022222;
-  padding: 20px 20px 0 20px;
-}
-
-#section-outils-que-jutilise .tag-category {
-  margin: 20px 0;
-}
-
-#section-outils-que-jutilise h2 {
-  padding-bottom: 35px;
-}
-
-#section-outils-que-jutilise p {
-  padding-bottom: 20px;
-}
-
-#section-outils-que-jutilise table {
-  color: #FFFFFF;
-  margin: 0px 0 20px 0;
-}
-
-#section-outils-que-jutilise table tbody .techno-type {
-  font-size: 0.75rem;
-  font-family: "Poppins Light", Arial, sans-serif;
-}
-
-#section-outils-que-jutilise table tbody .techno {
-  font-size: 0.75rem;
-  font-family: "Poppins Light", Arial, sans-serif;
-}
-
-#section-outils-que-jutilise table tbody td {
-  border: 1px solid #3E3E3E;
-  width: 100%;
-  padding: 17px 15px;
 }
 /*# sourceMappingURL=index.css.map */

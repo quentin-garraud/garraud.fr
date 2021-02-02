@@ -77,3 +77,31 @@ img{
     line-height: $line-height-mobile;
     color: $color-primary-light;
 }
+
+@mixin section-params {
+    background-color: $color-primary-dark;
+    padding: 50px 20px 0 20px;
+}
+
+
+table{
+    color: $color-primary-light;
+    margin: 0px 0 20px 0;
+
+    tbody{
+        
+        .techno-type{
+            font-size: $caption-font-size-mobile;
+            font-family: $body-light;
+        }
+        .techno{
+            font-size: $body-font-size-mobile;                
+            font-family: $body-light;
+        }
+        td{
+            border: $border;
+            width: 100%;
+            padding: 17px 15px;
+        }
+    }
+}

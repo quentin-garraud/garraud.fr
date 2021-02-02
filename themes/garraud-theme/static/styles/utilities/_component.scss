@@ -4,6 +4,7 @@
     color: $color-black;
     font-family: $body-bold;
     display: inline-block;
+    margin: 20px 0;
 }
 .link-button{
     @include link;
@@ -33,4 +34,11 @@
     p{
         padding-top: 5px;
     }
+}
+
+.summary{
+    padding-bottom: 20px;   
+}
+.title-project{
+    padding-bottom: 25px;
 }
