@@ -1,18 +1,16 @@
 header.header{
     background-color: $color-primary-dark;
-    padding: 20px;
+    padding: 20px 0;
     border-bottom: $border;
-    display: flex;
-    flex-flow: row;
-
-    .burger-menu{
-        width: 50px;
-        background-color: white;
-    }
+    position: fixed;
+    width: 100%;
+    background: rgba( 0, 34, 34, 0.30 );
+    backdrop-filter: blur( 16px );
+    -webkit-backdrop-filter: blur( 16px );
 
     img.logo{
         display: block;
         margin: 0 auto;
-        width: 17%;
+        width: 10%;
     }
 }
