@@ -47,7 +47,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1rem;
+  font-size: 0.99rem;
   font-family: "Noe Display Bold", serif;
   line-height: 26px;
   color: #FFFFFF;
@@ -135,7 +135,7 @@ table tbody td {
 .card {
   border: 1px solid #3E3E3E;
   padding: 20px 14px;
-  width: 41%;
+  width: 40%;
   margin-bottom: 20px;
 }
 
