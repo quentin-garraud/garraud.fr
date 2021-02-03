@@ -1,9 +1,16 @@
-#section-hero-banner, #cards-hero, #section-projects, #section-outils-que-jutilise, #section-about, #section-bloom, #section-gaupx{
+#section-hero-banner, 
+#cards-hero, 
+#section-projects, 
+#section-outils-que-jutilise, 
+#section-about, 
+#section-bloom, 
+#section-gaupx{
     @include section-params;
 }
 
 #section-hero-banner{
     padding-top: 125px;
+
     h1{
         padding-top: 22px;
         font-size: 48px;
@@ -30,8 +37,13 @@
 
 
 @media screen and (min-width:640px){
-    #section-projects .project:first-child {
-        padding-bottom: 140px;
+    #cards-hero, 
+    #section-projects, 
+    #section-outils-que-jutilise, 
+    #section-about, 
+    #section-bloom,
+    #section-gaupx{
+        padding-left: 101px;
     }
     #section-hero-banner{
         padding: 150px 0px 90px 101px;
@@ -50,8 +62,7 @@
         padding: 0;
         padding-left: 101px;
     }
-    #cards-hero, #section-projects, #section-outils-que-jutilise, #section-about, #section-bloom, #section-gaupx{
-        
-        padding-left: 101px;
+    #section-projects .project:first-child {
+        padding-bottom: 140px;
     }
 }

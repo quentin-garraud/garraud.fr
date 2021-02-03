@@ -169,27 +169,6 @@ img {
   padding-bottom: 25px;
 }
 
-table {
-  color: #FFFFFF;
-  margin: 0px 0 20px 0;
-}
-
-table tbody .techno-type {
-  font-size: 0.75rem;
-  font-family: "Poppins Light", Arial, sans-serif;
-}
-
-table tbody .techno {
-  font-size: 0.75rem;
-  font-family: "Poppins Light", Arial, sans-serif;
-}
-
-table tbody td {
-  border: 1px solid #3E3E3E;
-  width: 100%;
-  padding: 17px 15px;
-}
-
 @media screen and (min-width: 640px) {
   .link-button {
     font-size: 1rem;
@@ -198,30 +177,26 @@ table tbody td {
     width: 70%;
     margin: 0 auto;
   }
-  .card {
-    width: 21%;
-    padding: 40px;
-  }
-  .summary {
-    font-size: 1rem;
-  }
   .project {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
-  .project img, .project .content-summary {
-    width: 40%;
+  .project .content-summary .title-project, .project .content-summary .summary {
+    width: 65%;
   }
-  .project .content-summary {
-    width: 50%;
+  .project .image-projet {
+    width: 100%;
+  }
+  .project .image-projet img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 350px;
+    height: 350px;
   }
 }
 
@@ -290,7 +265,13 @@ footer p {
   font-size: 0.6875rem;
 }
 
-#section-hero-banner, #cards-hero, #section-projects, #section-outils-que-jutilise, #section-about, #section-bloom, #section-gaupx {
+#section-hero-banner,
+#cards-hero,
+#section-projects,
+#section-outils-que-jutilise,
+#section-about,
+#section-bloom,
+#section-gaupx {
   background-color: #022222;
   background-image: url("../../assets/images/background-texture.png");
   background-repeat: repeat;
@@ -332,8 +313,13 @@ footer p {
 }
 
 @media screen and (min-width: 640px) {
-  #section-projects .project:first-child {
-    padding-bottom: 140px;
+  #cards-hero,
+  #section-projects,
+  #section-outils-que-jutilise,
+  #section-about,
+  #section-bloom,
+  #section-gaupx {
+    padding-left: 101px;
   }
   #section-hero-banner {
     padding: 150px 0px 90px 101px;
@@ -356,8 +342,8 @@ footer p {
     padding: 0;
     padding-left: 101px;
   }
-  #cards-hero, #section-projects, #section-outils-que-jutilise, #section-about, #section-bloom, #section-gaupx {
-    padding-left: 101px;
+  #section-projects .project:first-child {
+    padding-bottom: 140px;
   }
 }
 /*# sourceMappingURL=index.css.map */
