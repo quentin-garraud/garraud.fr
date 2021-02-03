@@ -32,6 +32,10 @@ a, a:hover, a:visited, a:active {
   text-decoration: none;
 }
 
+ul, li {
+  list-style: none;
+}
+
 h1 {
   font-size: 1.875rem;
   font-family: "Noe Display Black", serif;
@@ -114,6 +118,9 @@ img {
     font-size: 1rem;
     line-height: 22px;
   }
+  a {
+    font-size: 1rem;
+  }
 }
 
 .tag-category {
@@ -161,21 +168,38 @@ img {
   padding-top: 5px;
 }
 
-.summary {
+.project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 50px;
+}
+
+.project .image-projet {
+  width: 100%;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 50px;
+}
+
+.project .content-summary .summary {
   padding-bottom: 20px;
 }
 
-.title-project {
+.project .content-summary .title-project {
   padding-bottom: 25px;
 }
 
 @media screen and (min-width: 640px) {
   .link-button {
     font-size: 1rem;
-  }
-  .container {
-    width: 70%;
-    margin: 0 auto;
+    margin-top: 20px;
   }
   .project {
     display: -webkit-box;
@@ -186,17 +210,15 @@ img {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .project .content-summary .title-project, .project .content-summary .summary {
-    width: 65%;
+  .project:nth-child(even) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
   }
-  .project .image-projet {
-    width: 100%;
-  }
-  .project .image-projet img {
-    -o-object-fit: cover;
-       object-fit: cover;
-    width: 350px;
-    height: 350px;
+  .card {
+    padding: 20px 50px;
+    width: 40%;
   }
 }
 
@@ -257,7 +279,7 @@ div.sidebar {
 
 footer {
   background-color: #022222;
-  padding: 10px 10px;
+  padding: 10px;
 }
 
 footer p {
@@ -265,13 +287,19 @@ footer p {
   font-size: 0.6875rem;
 }
 
+@media screen and (min-width: 640px) {
+  footer {
+    background-color: #022222;
+  }
+  footer p {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+}
+
 #section-hero-banner,
 #cards-hero,
-#section-projects,
-#section-outils-que-jutilise,
-#section-about,
-#section-bloom,
-#section-gaupx {
+#section-projects {
   background-color: #022222;
   background-image: url("../../assets/images/background-texture.png");
   background-repeat: repeat;
@@ -308,28 +336,20 @@ footer p {
           justify-content: space-between;
 }
 
-#section-projects .project:first-child {
-  padding-bottom: 50px;
-}
-
 @media screen and (min-width: 640px) {
+  #section-hero-banner,
   #cards-hero,
   #section-projects,
-  #section-outils-que-jutilise,
-  #section-about,
-  #section-bloom,
-  #section-gaupx {
-    padding-left: 101px;
+  #section-outils-que-jutilise {
+    padding: 9% 20%;
+    margin: 0 auto;
   }
   #section-hero-banner {
-    padding: 150px 0px 90px 101px;
+    padding-top: 125px;
   }
   #section-hero-banner h1 {
     font-size: 90px;
     line-height: 84px;
-  }
-  #section-hero-banner .summary {
-    width: 45%;
   }
   #cards-hero {
     display: -webkit-box;
@@ -341,9 +361,8 @@ footer p {
             flex-flow: row;
     padding: 0;
     padding-left: 101px;
-  }
-  #section-projects .project:first-child {
-    padding-bottom: 140px;
+    -ms-flex-negative: 3;
+        flex-shrink: 3;
   }
 }
 /*# sourceMappingURL=index.css.map */

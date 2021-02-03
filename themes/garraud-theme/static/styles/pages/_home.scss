@@ -1,11 +1,11 @@
 #section-hero-banner, 
 #cards-hero, 
-#section-projects, 
-#section-outils-que-jutilise, 
-#section-about, 
-#section-bloom, 
-#section-gaupx{
-    @include section-params;
+#section-projects{
+    background-color: $color-primary-dark;
+    background-image: url("../../assets/images/background-texture.png");
+    background-repeat: repeat;
+    background-size: auto;
+    padding: 50px 20px 0 20px;
 }
 
 #section-hero-banner{
@@ -29,40 +29,30 @@
     justify-content: space-between;
 }
 
-#section-projects{
-    .project:first-child{
-        padding-bottom: 50px;
-    }
-}
-
 
 @media screen and (min-width:640px){
+    #section-hero-banner,
     #cards-hero, 
     #section-projects, 
-    #section-outils-que-jutilise, 
-    #section-about, 
-    #section-bloom,
-    #section-gaupx{
-        padding-left: 101px;
+    #section-outils-que-jutilise{
+        padding: 9% 20%;
+        margin: 0 auto;
     }
-    #section-hero-banner{
-        padding: 150px 0px 90px 101px;
 
+    #section-hero-banner{
+        padding-top: 125px;
+    
         h1{
             font-size: 90px;
             line-height: 84px;
         }
-        .summary{
-            width: 45%;
-        }
     }
+    
     #cards-hero{
         display: flex;
         flex-flow: row;
         padding: 0;
         padding-left: 101px;
-    }
-    #section-projects .project:first-child {
-        padding-bottom: 140px;
+        flex-shrink: 3;
     }
 }

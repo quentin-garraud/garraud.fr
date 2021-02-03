@@ -1,90 +1,24 @@
-@mixin h1-mobile {
-    font-size: $h1-font-size-mobile;
-    font-family: $heading-black;
-    line-height: 37px;
-    color: $color-primary-light;
-}
-@mixin h1-desktop {
-    font-size: $h1-font-size-desktop;
-    line-height: 64px;
-}
 h1{
     @include h1-mobile;
 }
 
-
-@mixin h2-mobile {
-    font-size: $h2-font-size-mobile;
-    font-family: $heading-black;
-    line-height: 22px;
-    color: $color-primary-light;
-}
-@mixin h2-desktop {
-    font-size: $h2-font-size-desktop;
-    line-height: 32px;
-}
 h2{
     @include h2-mobile;
 }
 
-
-@mixin h3-mobile {
-    font-size: $h3-font-size-mobile;
-    font-family: $heading-bold;
-    line-height: 26px;
-    color: $color-primary-light;
-}
-@mixin h3-desktop {
-    font-size: $h3-font-size-desktop;
-    line-height: 22px;
-}
 h3{
     @include h3-mobile;
-}
-
-
-@mixin h4-mobile {
-    font-size: $h4-font-size-mobile;
-    font-family: $heading-bold;
-    line-height: 22px;
-    color: $color-primary-light;
-}
-@mixin h4-desktop {
-    font-size: $h4-font-size-desktop;
-    line-height: 22px;
 }
 h4{
     @include h4-mobile;
 }
-
-@mixin link-mobile {
-    font-size: $link-font-size-mobile;
-    line-height: 18px;
-    font-family: $body-light;
-    color: $color-primary-light;
-}
-@mixin link-desktop {
-    font-size: $link-font-size-desktop;
-}
 a{
     @include link-mobile;
-}
-
-@mixin body-mobile{
-    line-height: 18px;
-    font-size: $body-font-size-mobile;
-    color: $color-primary-light;
-}
-@mixin body-desktop{
-    font-size: $body-font-size-desktop;
-    line-height: 22px;
-
 }
 p{
     @include body-mobile;
     font-family: $body-light;
 }
-
 strong{
     @include body-mobile;
     font-family: $body-bold;
@@ -93,6 +27,9 @@ img{
     max-width: 100%;
     width: 100%;
 }
+
+
+
 @media screen and (min-width:640px){
     h1{
         @include h1-desktop;
@@ -114,7 +51,9 @@ img{
     }
     strong{
         @include body-desktop;
-       
+    }
+    a{
+        @include link-desktop;
     }
 }
 
