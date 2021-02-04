@@ -73,13 +73,46 @@
     .project{
         display: flex;
         flex-direction: row;
-        
+        justify-content: center;
+        padding-bottom: 150px;
+
+        .content-summary, .image-projet{
+            width: 40vw;
+            margin: 0 20px;
+            height: auto;
+        }
+
         &:nth-child(even){
             flex-direction: row-reverse;
         }
     }
-    .card{
-        padding: 20px 50px;
-        width: 40%;
+}
+
+@media screen and (max-width:992px){
+    #section-hero-banner{
+    
+        h1{
+            font-size: 60px;
+            line-height: 64px;
+        }
+    }
+}
+
+@media screen and (max-width:440px){
+    #section-hero-banner{
+    
+        h1{
+            font-size: 46px;
+            line-height: 50px;
+        }
+    }
+}
+@media screen and (max-width:340px){
+    #section-hero-banner{
+    
+        h1{
+            font-size: 42px;
+            line-height: 45px;
+        }
     }
 }
