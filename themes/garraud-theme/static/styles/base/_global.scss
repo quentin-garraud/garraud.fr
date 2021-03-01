@@ -1,11 +1,13 @@
+body{
+    background-color: $color-primary-dark;
+}
+
 h1{
     @include h1-mobile;
 }
-
 h2{
     @include h2-mobile;
 }
-
 h3{
     @include h3-mobile;
 }
@@ -27,7 +29,10 @@ img{
     max-width: 100%;
     width: 100%;
 }
-
+#content{
+    display: flex;
+    
+}
 
 
 @media screen and (min-width:640px){
@@ -56,5 +61,4 @@ img{
         @include link-desktop;
     }
 }
-
 
