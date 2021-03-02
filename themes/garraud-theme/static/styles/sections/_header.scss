@@ -16,12 +16,23 @@ header.header{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        cursor: pointer;
 
         .burger-menu-line{
             display: block;
             width: 100%;
             height: 20%;
             background-color: $color-primary-light;
+
+        }
+        &.active .burger-menu-line{
+
+            &:first-child{
+                transform: translateY(-5px);
+            }
+            &:last-child{
+                transform: translateY(5px);
+            }
         }
     }
 
@@ -29,6 +40,46 @@ header.header{
     img.logo{
         display: block;
         margin: 0 auto;
+        width: 70px;
+    }
+}
+
+nav#menu{
+    background: rgba($color-primary-dark, 0.30 );
+    backdrop-filter: blur( 30px );
+    -webkit-backdrop-filter: blur( 30px );
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    display: none;
+    border: $border;
+
+    ul li{
+        margin: 40px 0;
+        text-align: start;
+        
+        a{
+            font-size: 30px;
+            font-family: $heading-black;
+        }
+    }
+
+    &.active{
+        position: fixed;
+        display: flex;
+    }
+}
+
+@media screen and (min-width:801px){
+    img.logo{
+        display: block;
+        margin: 0 auto;
         width: 100px;
+    }
+    nav#menu{
+        width: 30%;
     }
 }

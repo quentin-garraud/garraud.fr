@@ -13,7 +13,7 @@ enableRobotsTXT = "false"
 
     ## Script plugins ##
     [[params.plugins.js]]
-    URL = ""
+    URL = "/scripts/menu.js"
 
 
 ##### Paramètres par défauts #####
