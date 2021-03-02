@@ -76,6 +76,17 @@ table {
 
 body {
   background-color: #022222;
+  background-image: url("../../assets/images/background-texture.png");
+  background-repeat: repeat;
+  background-size: auto;
+}
+
+::-moz-selection {
+  background-color: #e2af06;
+}
+
+::selection {
+  background-color: #e2af06;
 }
 
 h1 {
@@ -177,7 +188,7 @@ img {
   color: #000;
   font-family: "Poppins Bold", Arial, sans-serif;
   display: inline-block;
-  margin: 20px 0;
+  margin-bottom: 20px;
 }
 
 .link-button {
@@ -224,7 +235,8 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
+  grid-gap: 20px;
 }
 
 .project .image-projet {
@@ -241,47 +253,42 @@ img {
   padding-bottom: 25px;
 }
 
-@media screen and (min-width: 640px) {
-  #section-projects {
-    width: 70%;
+@media screen and (min-width: 801px) {
+  .link-button {
+    font-size: 1rem;
+  }
+  .project {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .project .image-projet {
+    display: block;
     margin: 0 auto;
-    padding-top: 50px;
+    -ms-grid-column-align: center;
+        justify-self: center;
   }
-  #section-projects .project {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    padding-bottom: 70px;
-  }
-  #section-projects .project .image-projet {
-    width: 450px;
-    min-height: 350px;
-    height: auto;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  #section-projects .project .content-summary {
-    width: 450px;
-    height: 450px;
-  }
-  #section-projects .project:nth-child(even) {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+  .project .content-summary {
+    -ms-grid-column-align: center;
+        justify-self: center;
   }
 }
 
 header.header {
   background: rgba(2, 34, 34, 0.3);
+  backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-          backdrop-filter: blur(16px);
   padding: 10px 20px;
   border-bottom: 1px solid #3E3E3E;
   position: -webkit-sticky;
@@ -324,25 +331,26 @@ header.header .burger-menu .burger-menu-line {
 header.header img.logo {
   display: block;
   margin: 0 auto;
-  width: 20%;
-}
-
-@media screen and (min-width: 640px) {
-  header.header img.logo {
-    display: block;
-    margin: 0 auto;
-    width: 5%;
-  }
+  width: 100px;
 }
 
 footer {
   background-color: #022222;
+  background-image: url("../../assets/images/background-texture.png");
+  background-repeat: repeat;
+  background-size: auto;
   padding: 10px;
 }
 
 footer p {
   text-align: center;
   font-size: 0.6875rem;
+}
+
+@media screen and (min-width: 801px) {
+  footer p {
+    font-size: 1rem;
+  }
 }
 
 aside.sidebar {
@@ -386,13 +394,14 @@ main.main {
           justify-content: space-between;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 801px) {
   main.main {
     padding: 0;
   }
   main.main #section-hero-banner {
     padding: 13vh 0;
-    width: 70%;
+    max-width: 90%;
+    width: 100%;
     margin: 0 auto;
   }
   main.main #section-hero-banner h1 {
@@ -408,6 +417,20 @@ main.main {
         -ms-flex-flow: row;
             flex-flow: row;
     padding: 0;
+  }
+  main.main #section-projects {
+    max-width: 90%;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1264px) {
+  main.main #section-hero-banner,
+  main.main #section-projects {
+    max-width: 60%;
+    width: 100%;
+    margin: 0 auto;
   }
 }
 /*# sourceMappingURL=index.css.map */

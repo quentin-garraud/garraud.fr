@@ -4,7 +4,7 @@
     color: $color-black;
     font-family: $body-bold;
     display: inline-block;
-    margin: 20px 0;
+    margin-bottom: 20px;
 }
 
 .link-button{
@@ -42,7 +42,8 @@
 .project{
     display: flex;
     flex-direction: column;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
+    grid-gap: 20px;
 
     .image-projet{
         height: 300px;
@@ -59,32 +60,28 @@
     }
 }
 
-@media screen and (min-width:640px){
-    #section-projects{
-        width: 70%;
-        margin: 0 auto;
-        padding-top: 50px;
+@media screen and (min-width:801px){
+    .link-button{
+        @include link-desktop;
+    }
+    
+    .project{
+        margin-top: 50px;
+        margin-bottom: 100px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 40px;
+        align-items: center;
+        justify-items: center;
+        justify-content: space-evenly;
 
-        .project{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            padding-bottom: 70px;
-
-            .image-projet{
-                width: 450px;
-                min-height: 350px;
-                height: auto;
-                object-fit: cover;
-            }
-            .content-summary{
-                width: 450px;
-                height: 450px;
-            }
-            
-            &:nth-child(even){
-                flex-direction: row-reverse;
-            }
+        .image-projet{
+            display: block;
+            margin: 0 auto;
+            justify-self: center;
+        }
+        .content-summary{
+            justify-self: center;
         }
     }
 }

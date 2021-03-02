@@ -1,6 +1,7 @@
 header.header{
     background: rgba($color-primary-dark, 0.30 );
     backdrop-filter: blur( 16px );
+    -webkit-backdrop-filter: blur( 16px );
     padding: 10px 20px;
     border-bottom: $border;
     position: sticky;
@@ -28,17 +29,6 @@ header.header{
     img.logo{
         display: block;
         margin: 0 auto;
-        width: 20%;
-    }
-}
-
-
-@media screen and (min-width:640px){
-    header.header{ 
-        img.logo{
-            display: block;
-            margin: 0 auto;
-            width: 5%;
-        }
+        width: 100px;
     }
 }
