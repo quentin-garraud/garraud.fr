@@ -30,13 +30,15 @@ main.main{
     justify-content: space-between;
 }
 
+
+
 @media screen and (min-width:801px){
     main.main{
         padding: 0;
 
         #section-hero-banner{
             padding: 13vh 0;
-            max-width: 90%;
+            max-width: 100%;
             width: 100%;
             margin: 0 auto;
 
@@ -60,8 +62,7 @@ main.main{
 
 @media screen and (min-width:1264px){
     main.main{
-        #section-hero-banner,
-        #section-projects{
+        #section-hero-banner{
             max-width: 60%;
             width: 100%;
             margin: 0 auto;
