@@ -133,11 +133,19 @@ p {
   font-family: "Poppins Light", Arial, sans-serif;
 }
 
+span {
+  line-height: 18px;
+  color: #FFFFFF;
+  font-size: 10px;
+  font-family: "Poppins Light", Arial, sans-serif;
+}
+
 strong {
   line-height: 18px;
   font-size: 0.75rem;
   color: #FFFFFF;
   font-family: "Poppins Bold", Arial, sans-serif;
+  display: block;
 }
 
 img {
@@ -530,6 +538,133 @@ main.main {
     max-width: 60%;
     width: 100%;
     margin: 0 auto;
+  }
+}
+
+#content .container-page {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#content .container-page .heading-page {
+  margin-top: 50px;
+  position: relative;
+}
+
+#content .container-page .heading-page img.heading-image {
+  width: 100%;
+  max-width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(2, 28, 28, 0.18)), to(#021D1D));
+  background: linear-gradient(180deg, rgba(2, 28, 28, 0.18) 0%, #021D1D 100%);
+}
+
+#content .container-page .heading-page h1.heading-title {
+  padding: 0 20px;
+  padding-bottom: 20px;
+  position: absolute;
+  bottom: 0;
+}
+
+#content .container-page .heading-page .tag-category {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+#content .container-page .meta-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 10px 0 20px 0;
+}
+
+#content .container-page .meta-page .meta-item {
+  text-transform: uppercase;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+#content .container-page .meta-page .meta-item span {
+  font-weight: normal;
+}
+
+#content .container-page .meta-page .meta-item p {
+  color: #FFFFFF;
+  font-family: "Poppins Bold", Arial, sans-serif;
+}
+
+#content .container-page .content-page h2, #content .container-page .content-page h3, #content .container-page .content-page h4, #content .container-page .content-page h5, #content .container-page .content-page h6, #content .container-page .content-page p img, #content .container-page .content-page img {
+  margin: 15px 0;
+}
+
+@media screen and (min-width: 801px) {
+  #content .container-page .heading-page {
+    margin-top: 90px;
+  }
+  #content .container-page .heading-page img.heading-image {
+    height: 500px;
+  }
+  #content .container-page .heading-page h1.heading-title {
+    padding: 0 50px;
+    padding-bottom: 50px;
+  }
+  #content .container-page .heading-page .tag-category {
+    top: 30px;
+    right: 30px;
+  }
+  #content .container-page .meta-page {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 20px 0 30px 0;
+  }
+  #content .container-page .meta-page .meta-item {
+    text-transform: uppercase;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  #content .container-page .meta-page .meta-item span {
+    font-size: 14px;
+  }
+  #content .container-page .content-page h2, #content .container-page .content-page h3, #content .container-page .content-page h4, #content .container-page .content-page h5, #content .container-page .content-page h6, #content .container-page .content-page p img, #content .container-page .content-page img {
+    margin: 20px 0;
+  }
+  #content .container-page .content-page img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 50%;
+    margin: 20px;
+    display: block;
+    margin: 0 auto;
+  }
+  #content .container-page .content-page .gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #content .container-page .content-page .gallery img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 500px;
+    margin: 20px;
   }
 }
 /*# sourceMappingURL=index.css.map */

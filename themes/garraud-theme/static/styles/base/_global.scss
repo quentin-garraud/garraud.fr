@@ -28,9 +28,16 @@ p{
     @include body-mobile;
     font-family: $body-light;
 }
+span{
+    line-height: 18px;
+    color: $color-primary-light;
+    font-size: 10px;
+    font-family: $body-light;
+}
 strong{
     @include body-mobile;
     font-family: $body-bold;
+    display: block;
 }
 img{
     max-width: 100%;
