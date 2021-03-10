@@ -9,6 +9,7 @@ header.header{
     display: flex;
     flex-direction: row;
     align-items: center;
+    z-index: 111;
 
     .burger-menu{
         height: 15px;
@@ -56,6 +57,7 @@ nav#menu{
     height: 100%;
     display: none;
     border: $border;
+    z-index: 111;
 
     ul li{
         margin: 40px 0;
