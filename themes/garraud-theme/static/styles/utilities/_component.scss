@@ -67,17 +67,29 @@
 
 #tools{
     .tool-item-container{
-        padding: 17px 20px;
+        padding: 12px;
         border: $border;
         border-bottom: none;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
         box-sizing: border-box;
         border-collapse: collapse;
+        align-items: center;
 
         &:last-child{
-            border-bottom: $border;;
+            border-bottom: $border;
+        }
+        img.tool-item-logo{
+            height: 20px;
+            width: auto;
+            margin-right: 8px;
+        }
+
+        .tool-item-text{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
         }
     }
 }
@@ -86,6 +98,15 @@
 @media screen and (min-width:801px){
     .link-button{
         @include link-desktop;
+    }
+    #tools{
+        .tool-item-container{
+
+            img.tool-item-logo{
+                height: 20px;
+                width: auto;
+            }
+        }
     }
     
     .project{

@@ -269,9 +269,35 @@ img {
 }
 
 #tools .tool-item-container {
-  padding: 17px 20px;
+  padding: 12px;
   border: 1px solid #3E3E3E;
   border-bottom: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-collapse: collapse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#tools .tool-item-container:last-child {
+  border-bottom: 1px solid #3E3E3E;
+}
+
+#tools .tool-item-container img.tool-item-logo {
+  height: 20px;
+  width: auto;
+  margin-right: 8px;
+}
+
+#tools .tool-item-container .tool-item-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -282,18 +308,16 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-collapse: collapse;
-}
-
-#tools .tool-item-container:last-child {
-  border-bottom: 1px solid #3E3E3E;
+  width: 100%;
 }
 
 @media screen and (min-width: 801px) {
   .link-button {
     font-size: 1rem;
+  }
+  #tools .tool-item-container img.tool-item-logo {
+    height: 20px;
+    width: auto;
   }
   .project {
     display: -webkit-box;
@@ -599,7 +623,7 @@ main.main {
   font-family: "Poppins Bold", Arial, sans-serif;
 }
 
-#content .container-page .content-page h2, #content .container-page .content-page h3, #content .container-page .content-page h4, #content .container-page .content-page h5, #content .container-page .content-page h6, #content .container-page .content-page p img, #content .container-page .content-page img {
+#content .container-page .content-page h2, #content .container-page .content-page h3, #content .container-page .content-page h4, #content .container-page .content-page h5, #content .container-page .content-page h6, #content .container-page .content-page p img {
   margin: 15px 0;
 }
 
@@ -640,10 +664,10 @@ main.main {
   #content .container-page .meta-page .meta-item span {
     font-size: 14px;
   }
-  #content .container-page .content-page h2, #content .container-page .content-page h3, #content .container-page .content-page h4, #content .container-page .content-page h5, #content .container-page .content-page h6, #content .container-page .content-page p img, #content .container-page .content-page img {
+  #content .container-page .content-page h2, #content .container-page .content-page h3, #content .container-page .content-page h4, #content .container-page .content-page h5, #content .container-page .content-page h6, #content .container-page .content-page p img {
     margin: 20px 0;
   }
-  #content .container-page .content-page img, #content .container-page .content-page p img {
+  #content .container-page .content-page p img {
     -o-object-fit: cover;
        object-fit: cover;
     height: 500px;

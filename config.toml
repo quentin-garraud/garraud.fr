@@ -22,3 +22,5 @@ enableRobotsTXT = "false"
     favicon = "/images/favicon.png"
     slogan = "Développeur Front End chez Solidnames"
 
+    [params.tooliused]
+    title = "Test title"

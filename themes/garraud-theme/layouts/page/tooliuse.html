@@ -1,0 +1,47 @@
+{{ define "head" }}
+    {{ partial "head.html" . }}
+{{ end }}
+
+
+{{ define "main" }}
+{{ partial "sidebar.html" . }}
+{{ with .Params }}
+    
+
+    <div class="container-page">
+        <div class="heading-page">
+            <img class="heading-image" src="{{ .thumbnail }}" alt="{{ .thumb_title }}" title="{{ .thumb_title }}">
+            <h1 class="heading-title">{{.Title}}</h1>
+            <a href="#" class="tag-category">{{.Category}}</a>
+
+        </div>
+        <div class="meta-page">
+            <div class="meta-item type">
+                <span>Type</span>
+                <p>{{.Type}}</p>
+            </div>
+            <div class="meta-item published">
+                <span>Publié</span>
+                <p>{{ .Date  }}</p>
+            </div>
+            <div class="meta-item update">
+                <span>Mis à jour</span>
+                <p>{{ .Lastmod }}</p>
+            </div>
+        </div>
+        <div class="content-page">
+            <div id="tools">
+                {{ range .list }}
+                    <div class="tool-item-container">
+                        <img class="tool-item-logo" src="{{ .logo }}" alt="{{.tool}} - {{.typetool}}">
+                        <div class="tool-item-text">
+                            <p class="tool-item-title">{{ .tool }}</p>
+                            <p class="tool-item-type">{{ .typetool }}</p>
+                        </div>
+                    </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+    {{ end }}
+{{ end }}
