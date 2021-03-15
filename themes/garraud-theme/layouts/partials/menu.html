@@ -1,10 +1,8 @@
 <nav id="menu">
     <ul>
-        <li><a href="/">Accueil</a></li>
-        <li><a href="#">A propos</a></li>
-        <li><a href="#">Mes projets</a></li>
-        <li><a href="#">Mes outils</a></li>
-        <li><a href="#">Contact</a></li>
+        {{ range .Site.Menus.main }}
+        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
 
+        {{ end }}
     </ul>
 </nav>

@@ -145,7 +145,7 @@ strong {
   font-size: 0.75rem;
   color: #FFFFFF;
   font-family: "Poppins Bold", Arial, sans-serif;
-  display: block;
+  display: inline-block;
 }
 
 img {
@@ -215,6 +215,7 @@ img {
 
 .decoration {
   color: #F9C722;
+  font-size: inherit;
 }
 
 .card {
@@ -255,7 +256,7 @@ img {
 }
 
 .project .image-projet {
-  height: 300px;
+  height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -597,6 +598,17 @@ main.main {
   right: 10px;
 }
 
+#content .container-page h1.harchive {
+  margin: 50px 0;
+  text-align: center;
+}
+
+#content .container-page h1.harchive span.term {
+  color: #F9C722;
+  font-size: inherit;
+  font-family: inherit;
+}
+
 #content .container-page .meta-page {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -623,8 +635,28 @@ main.main {
   font-family: "Poppins Bold", Arial, sans-serif;
 }
 
-#content .container-page .content-page h2, #content .container-page .content-page h3, #content .container-page .content-page h4, #content .container-page .content-page h5, #content .container-page .content-page h6, #content .container-page .content-page p img {
+#content .container-page .content-page h3, #content .container-page .content-page h4, #content .container-page .content-page h5, #content .container-page .content-page h6, #content .container-page .content-page p img {
   margin: 15px 0;
+}
+
+#content .container-page .content-page .client-link {
+  margin: 20px 0 40px 0;
+}
+
+#content .container-page .content-page .content {
+  margin-bottom: 50px;
+}
+
+#content .container-page .content-page .view-images .image-project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 100%;
+  width: 100%;
 }
 
 @media screen and (min-width: 801px) {
@@ -692,6 +724,29 @@ main.main {
        object-fit: cover;
     height: 500px;
     margin: 20px;
+  }
+  #content .container-page .content-page .view-images {
+    margin: 100px 0;
+  }
+  #content .container-page .content-page .view-images .image-project {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  #content .container-page .content-page .view-images .image-project img.image-project-desktop {
+    max-width: 45%;
+    width: 100%;
+  }
+  #content .container-page .content-page .view-images .image-project img.image-project-mobile {
+    max-width: 20%;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=index.css.map */

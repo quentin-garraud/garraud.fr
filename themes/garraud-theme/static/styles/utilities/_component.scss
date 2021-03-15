@@ -19,6 +19,7 @@
 
 .decoration{
     color: $color-primary;
+    font-size: inherit;
 }
 
 .card{
@@ -51,7 +52,7 @@
     grid-gap: 20px;
 
     .image-projet{
-        height: 300px;
+        height: 200px;
         object-fit: cover;
     }
 

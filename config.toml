@@ -3,7 +3,7 @@ languageCode = "fr-FR"
 title = "Quentin GARRAUD"
 theme = "garraud-theme"
 enableRobotsTXT = "false"
-
+disableKinds = ["term"]
 
 #### Plugins ####
 [params.plugins]
@@ -15,12 +15,34 @@ enableRobotsTXT = "false"
     [[params.plugins.js]]
     URL = "/scripts/menu.js"
 
+#### Taxonomies ####
+[taxonomies]
+    category = "categories"
+
+
+[menu]
+  [[menu.main]]
+    name = "Accueil"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Les articles"
+    url = "/articles/"
+    weight = 2
+
+  [[menu.main]]
+    name = "Les projets"
+    url = "/projets/"
+    weight = 3
+
+  [[menu.main]]
+    name = "Boîte à outils"
+    url = "/la-boite-a-outils-du-web/"
+    weight = 4
 
 ##### Paramètres par défauts #####
 [params]
     description = "Développeur Front End en alternance au CESI de Bordeaux chez Solidnames."
     favicon = "/images/favicon.png"
     slogan = "Développeur Front End chez Solidnames"
-
-    [params.tooliused]
-    title = "Test title"

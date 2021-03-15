@@ -1,0 +1,25 @@
+{{ define "head" }}
+    {{ partial "head.html" . }}
+{{ end }}
+
+
+{{ define "main" }}
+{{ partial "sidebar.html" . }}
+    <div class="container-page">
+        <h1 class="heading-title harchive">Catégorie : <span class="term">{{.Title}}</span></h1>
+        
+        <div class="content-page">
+            {{ range .Pages }}
+            <div class="project">
+                <img class="image-projet" src="{{.Params.thumbnail}}" alt="">
+                <div class="content-summary">
+                    {{ partial "categories.html" .}}
+                    <a href="{{.Permalink}}"><h2 class="title-project">{{.Title}}</h2></a>
+                    <p class="summary">{{.Summary}}</p>
+                    <a href="{{.Permalink}}" class="link-button">Afficher plus -></a>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+{{ end }}

@@ -5,33 +5,32 @@
 
 {{ define "main" }}
 {{ partial "sidebar.html" . }}
-{{ with .Params }}
-    
 
     <div class="container-page">
         <div class="heading-page">
-            <img class="heading-image" src="{{ .thumbnail }}" alt="{{ .thumb_title }}" title="{{ .thumb_title }}">
-            <h1 class="heading-title">{{.Title}}</h1>
-            <a href="#" class="tag-category">{{.Category}}</a>
-
+            <img class="heading-image" src="{{ .Params.thumbnail }}" alt="{{ .Params.thumb_title }}" title="{{ .Params.thumb_title }}">
+            <h1 class="heading-title">{{.Params.Title}}</h1>
+            {{ partial "categories.html" .}}
+            
         </div>
         <div class="meta-page">
             <div class="meta-item type">
                 <span>Type</span>
-                <p>Article</p>
+                <p><a href="/articles/"><strong>Article</strong></a></p>
             </div>
             <div class="meta-item published">
                 <span>Publié</span>
-                <p>{{ .Date  }}</p>
+                <p>{{ .Params.Date  }}</p>
             </div>
             <div class="meta-item update">
                 <span>Mis à jour</span>
-                <p>{{ .Lastmod }}</p>
+                <p>{{ .Params.Lastmod }}</p>
             </div>
         </div>
-        {{ end }}
         <div class="content-page">
             {{.Content}}
         </div>
+        
+
     </div>
 {{ end }}

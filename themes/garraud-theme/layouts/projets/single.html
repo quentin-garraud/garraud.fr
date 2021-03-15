@@ -1,0 +1,59 @@
+{{ define "head" }}
+    {{ partial "head.html" . }}
+{{ end }}
+
+
+{{ define "main" }}
+{{ partial "sidebar.html" . }}
+{{ with .Params }}
+    
+
+    <div class="container-page">
+        <div class="heading-page">
+            <img class="heading-image" src="{{ .thumbnail }}" alt="{{ .thumb_title }}" title="{{ .thumb_title }}">
+            <h1 class="heading-title">{{.Title}}</h1>
+            <a href="#" class="tag-category">{{.Category}}</a>
+
+        </div>
+        <div class="meta-page">
+            <div class="meta-item type">
+                <span>Type de page</span>
+                <p><a href="/projets/"><strong>Projet</strong></a></p>
+            </div>
+            <div class="meta-item published">
+                <span>Type de projet</span>
+                <p>{{ .type_de_projet  }}</p>
+            </div>
+            <div class="meta-item update">
+                <span>Mis à jour</span>
+                <p>{{ .client }}</p>
+            </div>
+        </div>
+        {{ end }}
+        <div class="content-page">
+            <div class="client-link">
+                <p><strong>Lien du site :</strong> <a href="{{.Params.site}}"  target="_blank">{{.Params.site}}</a></p>
+            </div>
+            <div class="content">
+                {{.Content}}
+            </div>
+
+            <div class="view-images">
+                <h2>Vue desktop</h2>
+                <div class="image-project">
+                {{ range .Params.desktop }}
+                    <img class="image-project-desktop" src="{{.image}}" alt="{{.title}}" title="{{.title}}">
+                {{ end }}
+                </div>
+            </div>
+            <div class="view-images">
+                <h2>Vue mobile</h2>
+                <div class="image-project">
+                {{ range .Params.mobile }}
+                    <img class="image-project-mobile" src="{{.image}}" alt="{{.title}}" title="{{.title}}">
+                {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+{{ end }}

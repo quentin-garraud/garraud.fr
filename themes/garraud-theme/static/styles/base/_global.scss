@@ -37,7 +37,7 @@ span{
 strong{
     @include body-mobile;
     font-family: $body-bold;
-    display: block;
+    display: inline-block;
 }
 img{
     max-width: 100%;
