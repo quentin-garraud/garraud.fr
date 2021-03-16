@@ -2,20 +2,19 @@
     {{ partial "head.html" . }}
 {{ end }}
 
-
 {{ define "main" }}
 {{ partial "sidebar.html" . }}
     <div class="container-page">
-        <h1 class="heading-title harchive">Tous les <span class="term">articles</span>.</h1>
+        <h1 class="heading-title harchive">Type de projet : <span class="term">{{.Title}}</span>.</h1>
         <div class="content-page">
             {{ range .Pages }}
             <div class="project">
-                <img class="image-projet" src="{{.Params.thumbnail}}" alt="{{.Title}}" title="{{.Title}}">
+                <img class="image-projet" src="{{.Params.thumbnail}}" alt="">
                 <div class="content-summary">
-                    {{ partial "categories.html" .}}
+                    {{ partial "type-de-projet.html" .}}
                     <a href="{{.Permalink}}"><h2 class="title-project">{{.Title}}</h2></a>
                     <p class="summary">{{.Summary}}</p>
-                    <a href="{{.Permalink}}" class="link-button">Lire l'article <i class="fas fa-arrow-right"></i></a>
+                    <a href="{{.Permalink}}" class="link-button">Regarder le projet <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
             {{ end }}

@@ -13,12 +13,12 @@
 @mixin h2-mobile {
     font-size: $h2-font-size-mobile;
     font-family: $heading-black;
-    line-height: 22px;
+    line-height: 26px;
     color: $color-primary-light;
 }
 @mixin h2-desktop {
     font-size: $h2-font-size-desktop;
-    line-height: 37px;
+    line-height: 40px;
 }
 
 

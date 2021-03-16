@@ -7,17 +7,18 @@ main.main{
 }
 
 #section-hero-banner{
-    padding: 50px 0;
+    padding: 40px 0;
 
-    h1{
+    h1.section-hero-title{
         padding-top: 22px;
         font-size: 48px;
         line-height: 55px;
     }
-    h4{
+    h4.section-hero-subtitle{
         color: $color-primary;
         letter-spacing: 1px;
         padding-bottom: 20px;
+        padding-top: 10px;
     }
     a{
         margin-top: 20px;
@@ -29,7 +30,9 @@ main.main{
     flex-flow: row wrap;
     justify-content: space-between;
 }
-
+#section-projects{
+    margin: 50px auto;
+}
 
 
 @media screen and (min-width:801px){
@@ -37,14 +40,17 @@ main.main{
         padding: 0;
 
         #section-hero-banner{
-            padding: 13vh 0;
+            padding: 100px 0;
             max-width: 100%;
             width: 100%;
             margin: 0 auto;
 
-            h1{
+            h1.section-hero-title{
                 font-size: 90px;
                 line-height: 84px;
+            }
+            h4.section-hero-subtitle{
+                font-size: 18px;
             }
         }
         #cards-hero{
@@ -55,7 +61,6 @@ main.main{
         #section-projects{
             max-width: 90%;
             width: 100%;
-            margin: 0 auto;
         }
     }
 }

@@ -14,10 +14,14 @@ disableKinds = ["term"]
     ## Script plugins ##
     [[params.plugins.js]]
     URL = "/scripts/menu.js"
+    [[params.plugins.js]]
+    URL = "https://kit.fontawesome.com/fc7e4946c4.js"
+    
 
 #### Taxonomies ####
 [taxonomies]
     category = "categories"
+    type-de-projet = "type-de-projet"
 
 
 [menu]
@@ -46,3 +50,66 @@ disableKinds = ["term"]
     description = "Développeur Front End en alternance au CESI de Bordeaux chez Solidnames."
     favicon = "/images/favicon.png"
     slogan = "Développeur Front End chez Solidnames"
+
+  [params.tool]
+    [[params.tool.item]]
+    name = "Visual Studio Code"
+    type = "IDE"
+    logo = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1200px-Visual_Studio_Code_1.35_icon.svg.png"
+
+    [[params.tool.item]]
+    name = "Figma"
+    type = "Design - Prototypage"
+    logo = "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
+
+    [[params.tool.item]]
+    name = "GoHugo"
+    type = "Générateur de site statique"
+    logo = "https://aws1.discourse-cdn.com/standard10/uploads/gohugo/original/2X/b/b91c8ab3a3c1c8679127cf049b46fa919e9e0e5c.png"
+
+    [[params.tool.item]]
+    name = "Woocomerce"
+    type = "E-commerce"
+    logo = "https://ps.w.org/woocommerce/assets/icon-256x256.png?rev=2366418"
+
+    [[params.tool.item]]
+    name = "Spotify"
+    type = "Musique"
+    logo = "https://www.opendoorsca.org/wp-content/uploads/2020/04/spotify-logo-png-open-2000.png"
+
+
+  [params.page]
+
+    [[params.page.item]]
+    id = "about"
+    image = "../../assets/images/section-about-profil-picture-1.jpg"
+    title = "Quentin GARRAUD"
+    tag = "à propos de moi"
+    url = "/a-propos-de-moi/"
+    summary = "En 2020, j’ai décidé de me lancer dans un nouveau challenge, lancer ma propre marque de vêtement. Bloom est une marque de vêtement écoresponsable qui a pour objectif d’utiliser que des produits naturel et d’utiliser des textiles avec une certification au minimum."
+    cta = "Me découvrir"
+    icon = "fas fa-arrow-right"
+    link = "/a-propos-de-moi/"
+
+    [[params.page.item]]
+    id = "bloom"
+    image = "../../assets/images/section-bloom-quentin.jpg"
+    title = "Bloom Clothing, ma marque de vêtement écoresponsable"
+    tag = "ma marque de vêtement"
+    url = "#"
+    summary = "En 2020, j’ai décidé de me lancer dans un nouveau challenge, lancer ma propre marque de vêtement. Bloom est une marque de vêtement écoresponsable qui a pour objectif d’utiliser que des produits naturel et d’utiliser des textiles avec une certification au minimum."
+    cta = "En savoir plus"
+    icon = "fas fa-external-link-alt"
+    link = "#"
+
+    [[params.page.item]]
+    id = "gaupx"
+    image = "../../assets/images/section-gaupx-image.jpg"
+    title = "GauPx, pour le plus grand bonheur de vos oreils."
+    tag = "mon projet musical"
+    url = "#"
+    summary = "Une grande partie de ma vie est la musique, je créer et compose des musiques de style électronique depuis de nombreuses années. J’aime partager la beauté de la musique à travers des créations musicales et les retranscrires en live."
+    cta = "En savoir plus"
+    icon = "fas fa-external-link-alt"
+    link = "#"
+

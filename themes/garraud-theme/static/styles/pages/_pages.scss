@@ -55,6 +55,12 @@
             h3, h4, h5, h6, p img{
                 margin: 15px 0;
             }
+            .view-images{
+                .section-view-title{
+                    margin-bottom: 50px;
+                    text-align: center;
+                }
+            }
             .client-link{
                 margin: 20px 0 40px 0;
             }
@@ -109,9 +115,6 @@
                 }
             }
             .content-page{
-                h2, h3, h4, h5, h6, p img{
-                    margin: 20px 0;
-                }
                 p img{
                     object-fit: cover;
                     height: 500px;

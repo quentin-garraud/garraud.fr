@@ -101,7 +101,7 @@ h1 {
 h2 {
   font-size: 1.5rem;
   font-family: "Noe Display Black", serif;
-  line-height: 22px;
+  line-height: 26px;
   color: #FFFFFF;
 }
 
@@ -166,7 +166,7 @@ img {
   }
   h2 {
     font-size: 2.375rem;
-    line-height: 37px;
+    line-height: 40px;
   }
   h3 {
     font-size: 1.375rem;
@@ -220,14 +220,9 @@ img {
 
 .card {
   border: 1px solid #3E3E3E;
-  border-right: none;
   padding: 20px 14px;
   width: 40%;
   margin-bottom: 20px;
-}
-
-.card:last-child {
-  border-right: 1px solid #3E3E3E;
 }
 
 .card img.icon {
@@ -280,12 +275,12 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-collapse: collapse;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 #tools .tool-item-container:last-child {
@@ -320,6 +315,12 @@ img {
     height: 20px;
     width: auto;
   }
+  .card {
+    border-right: none;
+  }
+  .card:last-child {
+    border-right: 1px solid #3E3E3E;
+  }
   .project {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -337,6 +338,10 @@ img {
         -ms-flex-align: center;
             align-items: center;
     padding: 30px 0;
+  }
+  .project .image-projet {
+    height: 400px;
+    width: 500px;
   }
   .project .image-projet,
   .project .content-summary {
@@ -497,19 +502,20 @@ main.main {
 }
 
 #section-hero-banner {
-  padding: 50px 0;
+  padding: 40px 0;
 }
 
-#section-hero-banner h1 {
+#section-hero-banner h1.section-hero-title {
   padding-top: 22px;
   font-size: 48px;
   line-height: 55px;
 }
 
-#section-hero-banner h4 {
+#section-hero-banner h4.section-hero-subtitle {
   color: #F9C722;
   letter-spacing: 1px;
   padding-bottom: 20px;
+  padding-top: 10px;
 }
 
 #section-hero-banner a {
@@ -529,19 +535,26 @@ main.main {
           justify-content: space-between;
 }
 
+#section-projects {
+  margin: 50px auto;
+}
+
 @media screen and (min-width: 801px) {
   main.main {
     padding: 0;
   }
   main.main #section-hero-banner {
-    padding: 13vh 0;
+    padding: 100px 0;
     max-width: 100%;
     width: 100%;
     margin: 0 auto;
   }
-  main.main #section-hero-banner h1 {
+  main.main #section-hero-banner h1.section-hero-title {
     font-size: 90px;
     line-height: 84px;
+  }
+  main.main #section-hero-banner h4.section-hero-subtitle {
+    font-size: 18px;
   }
   main.main #cards-hero {
     display: -webkit-box;
@@ -556,7 +569,6 @@ main.main {
   main.main #section-projects {
     max-width: 90%;
     width: 100%;
-    margin: 0 auto;
   }
 }
 
@@ -639,6 +651,11 @@ main.main {
   margin: 15px 0;
 }
 
+#content .container-page .content-page .view-images .section-view-title {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
 #content .container-page .content-page .client-link {
   margin: 20px 0 40px 0;
 }
@@ -695,9 +712,6 @@ main.main {
   }
   #content .container-page .meta-page .meta-item span {
     font-size: 14px;
-  }
-  #content .container-page .content-page h2, #content .container-page .content-page h3, #content .container-page .content-page h4, #content .container-page .content-page h5, #content .container-page .content-page h6, #content .container-page .content-page p img {
-    margin: 20px 0;
   }
   #content .container-page .content-page p img {
     -o-object-fit: cover;

@@ -2,16 +2,13 @@
     {{ partial "head.html" . }}
 {{ end }}
 
-
 {{ define "main" }}
 {{ partial "sidebar.html" . }}
-
     <div class="container-page">
         <div class="heading-page">
             <img class="heading-image" src="{{ .Params.thumbnail }}" alt="{{ .Params.thumb_title }}" title="{{ .Params.thumb_title }}">
             <h1 class="heading-title">{{.Params.Title}}</h1>
             {{ partial "categories.html" .}}
-            
         </div>
         <div class="meta-page">
             <div class="meta-item type">
@@ -30,7 +27,5 @@
         <div class="content-page">
             {{.Content}}
         </div>
-        
-
     </div>
 {{ end }}
