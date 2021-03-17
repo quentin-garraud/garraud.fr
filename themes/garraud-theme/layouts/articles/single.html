@@ -6,7 +6,7 @@
 {{ partial "sidebar.html" . }}
     <div class="container-page">
         <div class="heading-page">
-            <img class="heading-image" src="{{ .Params.thumbnail }}" alt="{{ .Params.thumb_title }}" title="{{ .Params.thumb_title }}">
+            <img class="heading-image" src="{{ .Params.thumbnail }}" alt="{{ .Params.Title }}" title="{{ .Params.Title }}">
             <h1 class="heading-title">{{.Params.Title}}</h1>
             {{ partial "categories.html" .}}
         </div>
@@ -17,14 +17,14 @@
             </div>
             <div class="meta-item published">
                 <span>Publié</span>
-                <p>{{ .Params.Date  }}</p>
+                <p>{{ .Date.Format "2 Jan 2006" }}</p>
             </div>
             <div class="meta-item update">
                 <span>Mis à jour</span>
-                <p>{{ .Params.Lastmod }}</p>
+                <p>{{ .Date.Format "2 Jan 2006" }}</p>
             </div>
         </div>
-        <div class="content-page">
+        <div class="content-page article-article">
             {{.Content}}
         </div>
     </div>

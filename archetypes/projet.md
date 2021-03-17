@@ -4,10 +4,8 @@ date: {{ .Date }}
 draft: true
 
 thumbnail: ""
-thumb_title: ""
+type-de-projet: ["e-commerce"]
 
-category: ""
-type_de_projet: ""
 client: ""
 site: ""
 

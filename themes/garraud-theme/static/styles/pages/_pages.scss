@@ -1,8 +1,8 @@
 #content{
-
+    
     .container-page{
         padding: 0 20px;
-        
+
         .heading-page{
             margin-top: 50px;
             position: relative;
@@ -52,8 +52,33 @@
             }
         }
         .content-page{
-            h3, h4, h5, h6, p img{
-                margin: 15px 0;
+            &.article-article{
+                margin-top: 20px;
+            }
+            p, h2, h3, h4{
+                margin-bottom: 10px;
+            }
+            h2, h3, h4{
+                margin-top: 20px;
+            }
+            ul li{
+                @include body-mobile;
+                font-family: $body-light;
+                display: block;
+                margin-bottom: 5px;
+                margin-left: 10px;
+                list-style: inside;
+            
+                &::before{
+                    content: "●";
+                    margin-right: 7px;
+                }
+            }
+            blockquote{
+                border-left: 4px solid $color-primary;
+                background-color: lighten($color-primary-dark, 2%);
+                padding: 10px 8px 8px 8px;
+                margin-bottom: 10px;
             }
             .view-images{
                 .section-view-title{
@@ -62,7 +87,7 @@
                 }
             }
             .client-link{
-                margin: 20px 0 40px 0;
+                margin: 20px 0 20px 0;
             }
             .content{
                 margin-bottom: 50px;
@@ -133,8 +158,12 @@
                         margin: 20px;
                     }
                 }
+                .client-link{
+                    margin: 20px 0 40px 0;
+                }
                 .view-images{
                     margin: 100px 0;
+                    
                     .image-project{
                         flex-direction: row;
                         align-items: center;

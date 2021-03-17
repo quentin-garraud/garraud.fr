@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Noe Display Black';
   src: url(../../assets/fonts/noe-display/NoeDisplay-Black.ttf);
@@ -124,6 +125,7 @@ a {
   line-height: 18px;
   font-family: "Poppins Light", Arial, sans-serif;
   color: #FFFFFF;
+  color: #F9C722;
 }
 
 p {
@@ -190,10 +192,14 @@ img {
   a {
     font-size: 1rem;
   }
+  ul li {
+    font-size: 1rem;
+    line-height: 22px;
+  }
 }
 
 .tag-category {
-  padding: 11px 20px;
+  padding: 8px 15px;
   background-color: #F9C722;
   color: #000;
   font-family: "Poppins Bold", Arial, sans-serif;
@@ -308,6 +314,9 @@ img {
 }
 
 @media screen and (min-width: 801px) {
+  .tag-category {
+    padding: 11px 20px;
+  }
   .link-button {
     font-size: 1rem;
   }
@@ -450,6 +459,7 @@ nav#menu ul li {
 nav#menu ul li a {
   font-size: 30px;
   font-family: "Noe Display Black", serif;
+  color: #FFFFFF;
 }
 
 nav#menu.active {
@@ -647,8 +657,39 @@ main.main {
   font-family: "Poppins Bold", Arial, sans-serif;
 }
 
-#content .container-page .content-page h3, #content .container-page .content-page h4, #content .container-page .content-page h5, #content .container-page .content-page h6, #content .container-page .content-page p img {
-  margin: 15px 0;
+#content .container-page .content-page.article-article {
+  margin-top: 20px;
+}
+
+#content .container-page .content-page p, #content .container-page .content-page h2, #content .container-page .content-page h3, #content .container-page .content-page h4 {
+  margin-bottom: 10px;
+}
+
+#content .container-page .content-page h2, #content .container-page .content-page h3, #content .container-page .content-page h4 {
+  margin-top: 20px;
+}
+
+#content .container-page .content-page ul li {
+  line-height: 18px;
+  font-size: 0.75rem;
+  color: #FFFFFF;
+  font-family: "Poppins Light", Arial, sans-serif;
+  display: block;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  list-style: inside;
+}
+
+#content .container-page .content-page ul li::before {
+  content: "●";
+  margin-right: 7px;
+}
+
+#content .container-page .content-page blockquote {
+  border-left: 4px solid #F9C722;
+  background-color: #032c2c;
+  padding: 10px 8px 8px 8px;
+  margin-bottom: 10px;
 }
 
 #content .container-page .content-page .view-images .section-view-title {
@@ -657,7 +698,7 @@ main.main {
 }
 
 #content .container-page .content-page .client-link {
-  margin: 20px 0 40px 0;
+  margin: 20px 0 20px 0;
 }
 
 #content .container-page .content-page .content {
@@ -738,6 +779,9 @@ main.main {
        object-fit: cover;
     height: 500px;
     margin: 20px;
+  }
+  #content .container-page .content-page .client-link {
+    margin: 20px 0 40px 0;
   }
   #content .container-page .content-page .view-images {
     margin: 100px 0;

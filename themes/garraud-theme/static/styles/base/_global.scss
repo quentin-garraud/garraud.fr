@@ -23,6 +23,7 @@ h4{
 }
 a{
     @include link-mobile;
+    color: $color-primary;
 }
 p{
     @include body-mobile;
@@ -43,6 +44,7 @@ img{
     max-width: 100%;
     width: 100%;
 }
+
 #content{
     display: flex;
     
@@ -73,6 +75,9 @@ img{
     }
     a{
         @include link-desktop;
+    }
+    ul li{
+        @include body-desktop;
     }
 }
 

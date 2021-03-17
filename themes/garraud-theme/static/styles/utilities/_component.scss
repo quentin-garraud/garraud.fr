@@ -1,5 +1,5 @@
 .tag-category{
-    padding: 11px 20px;
+    padding: 8px 15px;
     background-color: $color-primary;
     color: $color-black;
     font-family: $body-bold;
@@ -91,6 +91,10 @@
 
 
 @media screen and (min-width:801px){
+    .tag-category{
+        padding: 11px 20px;
+    }
+    
     .link-button{
         @include link-desktop;
     }
