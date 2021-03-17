@@ -15,37 +15,15 @@
         <a href="/projets/" class="link-button">Tous mes projets <i class="fas fa-arrow-right"></i></a>
     </section>
     <section id="cards-hero">
-        <div class="card" id="card-one-page">
-            <img src="../../assets/images/monitor-site-one-page-hero-card.svg" alt="Pictogramme - Site One Page" class="icon">
-            <h3>Site One Page</h3>
-            <p>
-                Je sais créer des sites web, simple efficace afin de présenter une activiter sur une seule page.  
-            </p>
+        {{ range .Site.Params.cardhero }}
+        <div class="card" id="card-{{.id}}">
+            <img src="{{.icone }}" alt="Pictogramme - {{.name }}" title="Pictogramme - {{.name }}" class="icon">
+            <h3>{{.name}}</h3>
+            <p>{{.description}}</p>
         </div>
-        <div class="card" id="card-e-commerce">
-            <img src="../../assets/images/e-commerce-hero-card.svg" alt="Pictogramme - E-commerce" class="icon">
-            <h3>Site e-commerce</h3>
-            <p>
-                Je met en place un site marchand, sur mesure, afin de digitaliser votre boutique, marque, grace à aux outils adéquates.
-            </p>
-        </div>
-        <div class="card" id="card-design">
-            <img src="../../assets/images/design-hero-card.svg" alt="Pictogramme - Design" class="icon">
-            <h3>Design</h3>
-            <p>
-                Je créer votre design sur mesure qui respecte un maximum votre charte graphique.
-            </p>
-        </div>
-        <div  class="card" id="card-seo">
-            <img src="../../assets/images/seo-hero-card.svg" alt="Pictogramme - SEO" class="icon">
-            <h3>SEO</h3>
-            <p>
-                Je vous aide à apparaître dans les premières pages de google grace à un réferencement local et à la creation de contenu.
-            </p>
-        </div>
+        {{ end }}
     </section>
     <section id="section-projects">
-
         {{ with $.Site.GetPage "section" "articles" }}
         {{ range first 1 .Data.Pages }}
         <div class="project">

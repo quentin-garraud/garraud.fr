@@ -56,6 +56,31 @@ disableKinds = ["term"]
     favicon = "/images/favicon.png"
     slogan = "Développeur Front End chez Solidnames"
 
+  [[params.cardhero]]
+  id = "one-page"
+  icone = "../../assets/images/monitor-site-one-page-hero-card.svg"
+  name = "Site One Page"
+  description = "Je sais créer des sites web, simple efficace afin de présenter une activiter sur une seule page."
+
+  [[params.cardhero]]
+  id = "e-commerce"
+  icone = "../../assets/images/e-commerce-hero-card.svg"
+  name = "Site e-commerce"
+  description = "Je met en place un site marchand, sur mesure, afin de digitaliser votre boutique, marque, grace à aux outils adéquates."
+  
+  [[params.cardhero]]
+  id = "design"
+  icone = "../../assets/images/design-hero-card.svg"
+  name = "Design"
+  description = "Je créer votre design sur mesure qui respecte un maximum votre charte graphique."
+  
+  [[params.cardhero]]
+  id = "seo"
+  icone = "../../assets/images/seo-hero-card.svg"
+  name = "SEO"
+  description = " Je vous aide à apparaître dans les premières pages de google grace à un réferencement local et à la creation de contenu."
+
+
   [params.tool]
     [[params.tool.item]]
     name = "Visual Studio Code"
