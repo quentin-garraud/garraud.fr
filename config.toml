@@ -113,10 +113,10 @@ disableKinds = ["term"]
     [[params.page.item]]
     id = "about"
     image = "../../assets/images/section-about-profil-picture-1.jpg"
-    title = "Quentin GARRAUD"
+    title = "J'me présente, je m'appelle Quentin"
     tag = "à propos de moi"
     url = "/a-propos-de-moi/"
-    summary = "En 2020, j’ai décidé de me lancer dans un nouveau challenge, lancer ma propre marque de vêtement. Bloom est une marque de vêtement écoresponsable qui a pour objectif d’utiliser que des produits naturel et d’utiliser des textiles avec une certification au minimum."
+    summary = "Je geek depuis mes 10 ans, l’informatique ma toujours inspiré, je savais déjà que j’allais en faire mon métier ! J’ai fais un stage de deux semaines chez un informaticien et ça ma beaucoup plû. Déteneur d’un BAC STI2D option SIN, j’ai intégré la formation Developpeur Web au CESI de Bordeaux en Septembre 2019 et j’ai été recruté par Solidnames pour des projets Front End."
     cta = "Me découvrir"
     icon = "fas fa-arrow-right"
     link = "/a-propos-de-moi/"

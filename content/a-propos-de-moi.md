@@ -49,4 +49,4 @@ formation:
 
 Je geek depuis mes 10 ans, l’informatique ma toujours inspiré, je savais déjà que j’allais en faire mon métier ! J’ai fais un stage de deux semaines chez un informaticien et ça ma beaucoup plû. 
 Déteneur d’un BAC STI2D option SIN, j’ai intégré la formation Developpeur Web au CESI de Bordeaux en Septembre 2019 et j’ai été recruté par Solidnames pour des projets Front End.
-Je suis curieux et passioné, j’ai apporté une touche d’originalité dans mes projets.
+Je suis curieux et passioné, j’aime apporté une touche d’originalité à mes projets.
