@@ -807,4 +807,175 @@ main.main {
     width: 100%;
   }
 }
+
+#about .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 50px 0;
+}
+
+#about .heading .heading-text .heading-text-description {
+  margin: 20px 0;
+}
+
+#about .heading .heading-text .heading-text-follow {
+  margin-top: 20px;
+}
+
+#about .heading .heading-text .heading-text-follow h4 {
+  color: #F9C722;
+}
+
+#about .heading .heading-text .heading-text-follow .heading-text-follow-rs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#about .heading .heading-text .heading-text-follow .heading-text-follow-rs li {
+  margin: 10px 20px 20px 0;
+}
+
+#about .heading .heading-text .heading-text-follow .heading-text-follow-rs li a {
+  color: #FFFFFF;
+  font-size: 1rem;
+}
+
+#about .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 50px;
+}
+
+#about .about .about-content {
+  margin-top: 50px;
+}
+
+#about .about .about-content h2.about-content-title {
+  margin-bottom: 5px;
+}
+
+#about .about .about-content .about-item {
+  margin-top: 30px;
+}
+
+#about .about .about-content .about-item p.about-item-date {
+  margin-bottom: 5px;
+}
+
+#about .about .about-content .about-item span.about-item-diplome {
+  display: inline-block;
+  font-size: 25px;
+  color: #F9C722;
+  font-family: "Poppins Bold", Arial, sans-serif;
+  margin-bottom: 8px;
+  line-height: 24px;
+}
+
+#about .about .about-content .about-item p.about-item-place {
+  margin-top: 15px;
+}
+
+#about .about .about-content .about-item p.about-item-place i {
+  color: #F9C722;
+}
+
+#about .about .about-content .about-item img {
+  width: 50px;
+}
+
+#about .contact {
+  margin: 50px 0;
+  border: 5px solid #F9C722;
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#about .contact h2 {
+  margin-bottom: 5px;
+}
+
+#about .contact .contact-content {
+  margin: 50px 0;
+  width: 100%;
+}
+
+#about .contact a {
+  font-size: "Poppins Bold", Arial, sans-serif;
+}
+
+@media screen and (min-width: 801px) {
+  #about .heading {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #about .heading .heading-text {
+    -ms-flex-preferred-size: 600px;
+        flex-basis: 600px;
+  }
+  #about .heading .heading-text .heading-text-description {
+    margin: 40px 0;
+  }
+  #about .heading .heading-text .heading-text-follow {
+    margin-top: 50px;
+  }
+  #about .heading .heading-text .heading-text-follow .heading-text-follow-rs li {
+    margin: 20px 20px 20px 0;
+  }
+  #about .heading .heading-text .heading-text-follow .heading-text-follow-rs li a {
+    font-size: 1.3rem;
+  }
+  #about .heading .about-image {
+    -ms-flex-preferred-size: 500px;
+        flex-basis: 500px;
+    height: 500px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #about .about {
+    margin: 50px 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #about .about .about-content {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  #about .contact .contact-content {
+    width: 70%;
+    text-align: center;
+  }
+}
 /*# sourceMappingURL=index.css.map */
