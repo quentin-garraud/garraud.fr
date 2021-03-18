@@ -596,28 +596,32 @@ main.main {
 
 #content .container-page .heading-page {
   margin-top: 50px;
-  position: relative;
-}
-
-#content .container-page .heading-page img.heading-image {
   width: 100%;
   max-width: 100%;
   height: 200px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#content .container-page .heading-page div.category-header {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: 10px;
 }
 
 #content .container-page .heading-page h1.heading-title {
-  padding: 0 20px;
-  padding-bottom: 20px;
-  position: absolute;
-  bottom: 0;
-}
-
-#content .container-page .heading-page .tag-category {
-  position: absolute;
-  top: 10px;
-  right: 10px;
+  margin: 10px;
 }
 
 #content .container-page h1.harchive {
@@ -724,17 +728,15 @@ main.main {
   }
   #content .container-page .heading-page {
     margin-top: 90px;
-  }
-  #content .container-page .heading-page img.heading-image {
     height: 500px;
   }
-  #content .container-page .heading-page h1.heading-title {
-    padding: 0 50px;
-    padding-bottom: 50px;
+  #content .container-page .heading-page div.category-header {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    margin: 30px;
   }
-  #content .container-page .heading-page .tag-category {
-    top: 30px;
-    right: 30px;
+  #content .container-page .heading-page h1.heading-title {
+    margin: 0 0 60px 50px;
   }
   #content .container-page .meta-page {
     display: -webkit-box;

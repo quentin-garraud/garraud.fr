@@ -31,7 +31,7 @@ disableKinds = ["term"]
     weight = 1
 
     [[menu.main]]
-    name = "A Propos de moi"
+    name = "A propos de moi"
     url = "/a-propos-de-moi/"
     weight = 2
 
