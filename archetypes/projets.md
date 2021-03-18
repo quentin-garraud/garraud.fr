@@ -4,13 +4,23 @@ date: {{ .Date }}
 draft: true
 description: ""
 url: ""
+summary: ""
 
-thumbnail: "../../assets/images/img-article.png"
 thumbnail: ""
 thumbnailsize: "cover"
 thumbnailposition: "center"
 
-categories: ["news"]
 
-summary: ""
+type-de-projet: ["e-commerce"]
+
+client: ""
+site: ""
+
+# desktop: 
+#     - image: ""
+#       title: ""
+
+# mobile:
+#     - image: ""
+#       title: ""
 ---

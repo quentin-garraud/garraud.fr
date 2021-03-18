@@ -736,7 +736,7 @@ main.main {
     margin: 30px;
   }
   #content .container-page .heading-page h1.heading-title {
-    margin: 0 0 60px 50px;
+    margin: 60px;
   }
   #content .container-page .meta-page {
     display: -webkit-box;

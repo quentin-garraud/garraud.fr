@@ -5,7 +5,7 @@
 {{ define "main" }}
 {{ partial "sidebar.html" . }}
     <div class="container-page">
-        <div class="heading-page" style="background: linear-gradient(180deg, rgba(2, 28, 28, 0.18) 0%, #021D1D 100%),  url('{{ .thumbnail }}') no-repeat; background-size: cover;">
+        <div class="heading-page"  style="background: linear-gradient(180deg, rgba(2, 28, 28, 0.18) 0%, #021D1D 100%),  url('{{ .Params.thumbnail }}') no-repeat; background-size: {{ .Params.thumbnailsize }}; background-position: {{ .Params.thumbnailposition }}">
             <div class="category-header">
                 {{ partial "type-de-projet.html" .}}
             </div>
