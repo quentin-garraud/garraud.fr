@@ -8,11 +8,35 @@
 }
 
 .link-button{
-    @include link-mobile;
-    display: inline-block;
+    $size: 14px;
+    $transition: .4s;
 
-    &:hover, &:active{
+    @include link-mobile;
+    display: flex;
+    align-items: center;
+    transition: $transition;
+    
+    
+    svg{
+        transition: $transition;
+        margin-left: 5px;
+        height: $size;
+        width: $size;
+        fill: $color-primary-light;
+
+        &:hover{
+            fill: $color-primary;
+            transform: translate(5px, 5px);
+        }
+    }
+    
+    &:hover{
         color: $color-primary;
+        
+        svg{
+            fill: $color-primary;
+            transform: translate(5px, 0px);
+        }
     }
 }
 
@@ -45,6 +69,7 @@
     flex-direction: column;
     margin-bottom: 50px;
     grid-gap: 20px;
+
 
     .image-projet{
         height: 200px;
@@ -97,6 +122,13 @@
     
     .link-button{
         @include link-desktop;
+        
+        $size: 18px;
+        
+        svg{
+            height: $size;
+            width: $size;
+        }
     }
     #tools{
         .tool-item-container{

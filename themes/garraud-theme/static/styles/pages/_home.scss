@@ -20,6 +20,10 @@ main.main{
         padding-bottom: 20px;
         padding-top: 10px;
     }
+    p.summary{
+        max-width: 100%;
+        width: 100%;
+    }
     a{
         margin-top: 20px;
     }
@@ -41,7 +45,7 @@ main.main{
 
         #section-hero-banner{
             padding: 100px 0;
-            max-width: 100%;
+            max-width: 90%;
             width: 100%;
             margin: 0 auto;
 
@@ -51,6 +55,9 @@ main.main{
             }
             h4.section-hero-subtitle{
                 font-size: 18px;
+            }
+            p.summary{
+                max-width: 60vw;
             }
         }
         #cards-hero{
@@ -71,6 +78,10 @@ main.main{
             max-width: 60%;
             width: 100%;
             margin: 0 auto;
+
+            p.summary{
+                max-width: 40vw;
+            }
         }
     }
 }

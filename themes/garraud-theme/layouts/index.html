@@ -3,7 +3,7 @@
 {{ end }}
 
 {{ define "main" }}
-{{ partial "sidebar.html" . }}
+<!-- {{ partial "sidebar.html" . }} -->
 <main class="main">
     <section id="section-hero-banner">
         <a href="/" class="tag-category">Moi c'est Quentin</a>
@@ -12,7 +12,7 @@
         <p class="summary">
             Couteau suisse du web, je suis actuellement alerternant chez <strong><a href="https://solidnames.fr/" target="_blank">Solidnames</a></strong>, une entreprise spécialisé dans les nom de domaines internet, ou j’intervient en tant que développeur Front End et étudiant au <strong><a href="https://catalogue.cesi.fr/developpeur-web-2169015/" target="_blank">CESI de Bordeaux</a></strong> dans la formation Développeur Web. Ceci est seulement 1/4 de mes occupation.
         </p>
-        <a href="/projets/" class="link-button">Tous mes projets <i class="fas fa-arrow-right"></i></a>
+        <a href="/projets/" class="link-button">Tous mes projets <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12"> <path id="Tracé_1" data-name="Tracé 1" d="M0,0H12V12H0Z" fill="none"></path> <path id="Tracé_2" data-name="Tracé 2" d="M10.086,7.611,7.4,4.929l.707-.707L12,8.111,8.111,12,7.4,11.293l2.682-2.682H4v-1Z" transform="translate(-2 -2.111)"></path></svg></a>
     </section>
     <section id="cards-hero">
         {{ range .Site.Params.cardhero }}
@@ -32,7 +32,7 @@
                 {{ partial "categories.html" .}}
                 <a href="{{.Permalink}}"><h2 class="title-project">{{.Title}}</h2></a>
                 <p class="summary">{{.Summary}}</p>
-                <a href="{{.Permalink}}" class="link-button">Lire l'article <i class="fas fa-arrow-right"></i></a>
+                <a href="{{.Permalink}}" class="link-button">Lire l'article </a>
             </div>
         </div>
         {{ end }}
@@ -45,7 +45,7 @@
                 {{ partial "type-de-projet.html" .}}
                 <a href="{{.Permalink}}"><h2 class="title-project">{{.Title}}</h2></a>
                 <p class="summary">{{.Summary}}</p>
-                <a href="{{.Permalink}}" class="link-button">Regarder le projet <i class="fas fa-arrow-right"></i></a>
+                <a href="{{.Permalink}}" class="link-button">Regarder le projet <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12"> <path id="Tracé_1" data-name="Tracé 1" d="M0,0H12V12H0Z" fill="none"></path> <path id="Tracé_2" data-name="Tracé 2" d="M10.086,7.611,7.4,4.929l.707-.707L12,8.111,8.111,12,7.4,11.293l2.682-2.682H4v-1Z" transform="translate(-2 -2.111)"></path> </svg></a>
             </div>
         </div>
         {{ end }}
@@ -68,7 +68,7 @@
                     {{ end }}
                 </div>
 
-                <a href="/liste-d-outil-que-j-utilise/" class="link-button">Afficher plus <i class="fas fa-arrow-right"></i></a>
+                <a href="/liste-d-outil-que-j-utilise/" class="link-button">Afficher plus <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12"> <path id="Tracé_1" data-name="Tracé 1" d="M0,0H12V12H0Z" fill="none"></path> <path id="Tracé_2" data-name="Tracé 2" d="M10.086,7.611,7.4,4.929l.707-.707L12,8.111,8.111,12,7.4,11.293l2.682-2.682H4v-1Z" transform="translate(-2 -2.111)"></path> </svg></a>
             </div>
         </div>
         {{ end }}
@@ -80,7 +80,7 @@
                 <a href="{{.url}}" class="tag-category">{{.tag}}</a>
                 <h2 class="title-project">{{.title}}</h2>
                 <p class="summary">{{.summary}}</p>
-                <a href="{{.link}}" class="link-button">{{.cta}}  {{ if .icon }}<i class="{{.icon}}"></i>{{ end }}</a>
+                <a href="{{.link}}" class="link-button">{{.cta}}  {{ if .icon }}<i class="{{.icon}}"></i>{{else}}<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12"> <path id="Tracé_1" data-name="Tracé 1" d="M0,0H12V12H0Z" fill="none"></path> <path id="Tracé_2" data-name="Tracé 2" d="M10.086,7.611,7.4,4.929l.707-.707L12,8.111,8.111,12,7.4,11.293l2.682-2.682H4v-1Z" transform="translate(-2 -2.111)"></path> </svg>{{ end }}</a>
             </div>
         </div>
         {{ end }}
