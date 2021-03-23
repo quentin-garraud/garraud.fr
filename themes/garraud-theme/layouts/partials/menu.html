@@ -9,7 +9,7 @@
   <ul class="social-network">
     {{ range .Site.Params.reseaux }}
     <li class="social-item">
-      <a class="social-item-link" href="{{ .link }}">{{.logo | safeHTML }}</a>
+      <a class="social-item-link" target="_blank" href="{{ .link }}">{{.logo | safeHTML }}</a>
     </li>
     {{ end }}
   </ul>
