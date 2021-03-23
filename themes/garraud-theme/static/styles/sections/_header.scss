@@ -78,11 +78,9 @@ nav#menu {
     }
   }
 
-  ul.social-network{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
+  ul.social-network {
+    justify-content: flex-start;
+
     li.social-item{
       margin: 40px;
 
@@ -90,22 +88,34 @@ nav#menu {
         $size: 25px;
         height: $size;
         width: $size;
-        fill: $color-primary-light;
-        transition: $transition;
 
-        &:hover{
-          fill: $color-primary;
-        }
       }
     }
   }
-
+  
   &.active {
     position: fixed;
     display: flex;
   }
 }
 
+
+ul.social-network{
+  display: flex;
+  flex-direction: row;
+  
+  li.social-item{
+
+    a svg{
+      fill: $color-primary-light;
+      transition: $transition;
+
+      &:hover{
+        fill: $color-primary;
+      }
+    }
+  }
+}
 @media screen and (min-width: 801px) {
   img.logo {
     display: block;

@@ -516,16 +516,9 @@ nav#menu ul.menu-links li.menu-item a.menu-link-item {
 }
 
 nav#menu ul.social-network {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 nav#menu ul.social-network li.social-item {
@@ -535,13 +528,6 @@ nav#menu ul.social-network li.social-item {
 nav#menu ul.social-network li.social-item a svg {
   height: 25px;
   width: 25px;
-  fill: #FFFFFF;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-nav#menu ul.social-network li.social-item a svg:hover {
-  fill: #F9C722;
 }
 
 nav#menu.active {
@@ -549,6 +535,26 @@ nav#menu.active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+ul.social-network {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+ul.social-network li.social-item a svg {
+  fill: #FFFFFF;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+ul.social-network li.social-item a svg:hover {
+  fill: #F9C722;
 }
 
 @media screen and (min-width: 801px) {
@@ -953,19 +959,19 @@ main.main {
   color: #F9C722;
 }
 
-#about .heading .heading-text .heading-text-follow .heading-text-follow-rs {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+#about .heading .heading-text .heading-text-follow ul.social-network {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
-#about .heading .heading-text .heading-text-follow .heading-text-follow-rs li {
-  margin: 10px 20px 20px 0;
+#about .heading .heading-text .heading-text-follow ul.social-network li.social-item {
+  margin: 25px 25px 0 0;
 }
 
-#about .heading .heading-text .heading-text-follow .heading-text-follow-rs li a {
-  color: #FFFFFF;
-  font-size: 1rem;
+#about .heading .heading-text .heading-text-follow ul.social-network li.social-item a svg {
+  height: 18px;
+  width: 18px;
 }
 
 #about .about {
@@ -1070,12 +1076,6 @@ main.main {
   }
   #about .heading .heading-text .heading-text-follow {
     margin-top: 50px;
-  }
-  #about .heading .heading-text .heading-text-follow .heading-text-follow-rs li {
-    margin: 20px 20px 20px 0;
-  }
-  #about .heading .heading-text .heading-text-follow .heading-text-follow-rs li a {
-    font-size: 1.3rem;
   }
   #about .heading .about-image {
     -ms-flex-preferred-size: 500px;
