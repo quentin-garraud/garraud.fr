@@ -17,9 +17,8 @@
     <div class="meta-item published">
       <span>Type de projet</span>
 
-      {{ $taxonomy := "type-de-projet" }} {{ with .Param $taxonomy }} {{ range
-      $index, $category := . }} {{ with $.Site.GetPage (printf "/%s/%s"
-      $taxonomy $category) -}}
+      {{ $taxonomy := "type-de-projet" }} {{ with .Param $taxonomy }} 
+      {{ range $index, $category := . }} {{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $category) -}}
       <p>
         <a href="{{ .Permalink | absURL }}"
           ><strong>{{ $category | urlize }}</strong></a
