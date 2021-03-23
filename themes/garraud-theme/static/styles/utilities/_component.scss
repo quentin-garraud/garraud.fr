@@ -9,7 +9,6 @@
 
 .link-button{
     $size: 14px;
-    $transition: .4s;
 
     @include link-mobile;
     display: flex;

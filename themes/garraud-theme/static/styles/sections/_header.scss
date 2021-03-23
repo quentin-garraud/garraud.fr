@@ -67,14 +67,36 @@ nav#menu {
   border: $border;
   z-index: 111;
 
-  ul li {
+  ul.menu-links li.menu-item{
     margin: 40px 0;
     text-align: start;
 
-    a {
+    a.menu-link-item{
       font-size: 30px;
       font-family: $heading-black;
       color: $color-primary-light;
+    }
+  }
+
+  ul.social-network{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    li.social-item{
+      margin: 40px;
+
+      a svg{
+        $size: 25px;
+        height: $size;
+        width: $size;
+        fill: $color-primary-light;
+        transition: $transition;
+
+        &:hover{
+          fill: $color-primary;
+        }
+      }
     }
   }
 

@@ -504,15 +504,44 @@ nav#menu {
   z-index: 111;
 }
 
-nav#menu ul li {
+nav#menu ul.menu-links li.menu-item {
   margin: 40px 0;
   text-align: start;
 }
 
-nav#menu ul li a {
+nav#menu ul.menu-links li.menu-item a.menu-link-item {
   font-size: 30px;
   font-family: "Noe Display Black", serif;
   color: #FFFFFF;
+}
+
+nav#menu ul.social-network {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav#menu ul.social-network li.social-item {
+  margin: 40px;
+}
+
+nav#menu ul.social-network li.social-item a svg {
+  height: 25px;
+  width: 25px;
+  fill: #FFFFFF;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+nav#menu ul.social-network li.social-item a svg:hover {
+  fill: #F9C722;
 }
 
 nav#menu.active {
