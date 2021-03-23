@@ -17,7 +17,6 @@ header.header {
     align-self: center;
     flex-grow: 4;
 
-
     img.logo {
       display: block;
       margin: 0 auto;
@@ -49,80 +48,11 @@ header.header {
     }
   }
 }
-.sticky{
-  position: sticky;
-  top: 0;
-}
-nav#menu {
-  background: rgba($color-primary-dark, 0.3);
-  backdrop-filter: blur(30px);
-  -webkit-backdrop-filter: blur(30px);
-  position: fixed;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  display: none;
-  border: $border;
-  z-index: 111;
 
-  ul.menu-links li.menu-item{
-    margin: 40px 0;
-    text-align: start;
-
-    a.menu-link-item{
-      font-size: 30px;
-      font-family: $heading-black;
-      color: $color-primary-light;
-    }
-  }
-
-  ul.social-network {
-    justify-content: flex-start;
-
-    li.social-item{
-      margin: 40px;
-
-      a svg{
-        $size: 25px;
-        height: $size;
-        width: $size;
-
-      }
-    }
-  }
-  
-  &.active {
-    position: fixed;
-    display: flex;
-  }
-}
-
-
-ul.social-network{
-  display: flex;
-  flex-direction: row;
-  
-  li.social-item{
-
-    a svg{
-      fill: $color-primary-light;
-      transition: $transition;
-
-      &:hover{
-        fill: $color-primary;
-      }
-    }
-  }
-}
 @media screen and (min-width: 801px) {
   img.logo {
     display: block;
     margin: 0 auto;
     width: 100px;
-  }
-  nav#menu {
-    width: 30%;
   }
 }
