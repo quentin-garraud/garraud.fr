@@ -1,32 +1,27 @@
-{{ define "head" }}
-    {{ partial "head.html" . }}
-{{ end }}
-
-{{ define "main" }}
-{{ partial "sidebar.html" . }}
-    <div class="container-page">
-        <div class="heading-page"  style="background: linear-gradient(180deg, rgba(2, 28, 28, 0.18) 0%, #021D1D 100%),  url('{{ .Params.thumbnail }}') no-repeat; background-size: {{ .Params.thumbnailsize }}; background-position: {{ .Params.thumbnailposition }}">
-            <div class="category-header">
-                {{ partial "type-de-projet.html" .}}
-            </div>
-            <h1 class="heading-title">{{.Params.Title}}</h1>
-        </div>
-        <div class="meta-page">
-            <div class="meta-item type">
-                <span>Type</span>
-                <p><a href="/articles/"><strong>Article</strong></a></p>
-            </div>
-            <div class="meta-item published">
-                <span>Publié</span>
-                <p>{{ .Date.Format "2 Jan 2006" }}</p>
-            </div>
-            <div class="meta-item update">
-                <span>Mis à jour</span>
-                <p>{{ .Date.Format "2 Jan 2006" }}</p>
-            </div>
-        </div>
-        <div class="content-page article-article">
-            {{.Content}}
-        </div>
+{{ define "head" }} {{ partial "head.html" . }} {{ end }} {{ define "main" }}
+<div class="container-page">
+  <div
+    class="heading-page"
+    style="background: linear-gradient(180deg, rgba(2, 28, 28, 0.18) 0%, #021D1D 100%),  url('{{ .Params.thumbnail }}') no-repeat; background-size: {{ .Params.thumbnailsize }}; background-position: {{ .Params.thumbnailposition }}">
+    <div class="category-header">{{ partial "type-de-projet.html" .}}</div>
+    <h1 class="heading-title">{{.Params.Title}}</h1>
+  </div>
+  <div class="meta-page">
+    <div class="meta-item type">
+      <span>Type</span>
+      <p>
+        <a href="/articles/"><strong>Article</strong></a>
+      </p>
     </div>
+    <div class="meta-item published">
+      <span>Publié</span>
+      <p>{{ .Date.Format "2 Jan 2006" }}</p>
+    </div>
+    <div class="meta-item update">
+      <span>Mis à jour</span>
+      <p>{{ .Date.Format "2 Jan 2006" }}</p>
+    </div>
+  </div>
+  <div class="content-page article-article">{{.Content}}</div>
+</div>
 {{ end }}
