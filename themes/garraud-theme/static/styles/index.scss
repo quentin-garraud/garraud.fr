@@ -1,24 +1,19 @@
-@import 'utilities/variables';
-@import 'utilities/fonts';
-@import 'utilities/mixin';
+@import "utilities/variables";
+@import "utilities/fonts";
+@import "utilities/mixin";
 
-@import 'base/reset';
-@import 'base/global';
+@import "base/reset";
+@import "base/global";
 
-@import 'utilities/component';
+@import "utilities/component";
 
-@import 'sections/header';
-@import 'sections/footer';
-@import 'sections/sidebar';
+@import "sections/header";
+@import "sections/footer";
+@import "sections/menu";
 
+@import "pages/home";
+@import "pages/pages";
+@import "pages/about";
+@import "pages/404";
 
-@import 'pages/home';
-@import 'pages/pages';
-@import 'pages/about';
-@import 'pages/404';
-
-
-
-
-@import 'utilities/media-queries';
-
+@import "utilities/media-queries";
