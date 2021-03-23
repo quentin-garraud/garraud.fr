@@ -8,10 +8,10 @@
       <p class="heading-text-description">{{ .Content }}</p>
       <div class="heading-text-follow">
         <h4>Me suivre</h4>
-        <ul class="heading-text-follow-rs">
-          {{ range .Params.reseaux }}
-          <li>
-            <a href="{{.link}}"><i class="{{.logo}}"></i></a>
+        <ul class="heading-text-follow-rs social-network">
+          {{ range .Site.Params.reseaux }}
+          <li class="social-item">
+            <a class="social-item-link" href="{{ .link }}">{{.logo | safeHTML }}</a>
           </li>
           {{ end }}
         </ul>
