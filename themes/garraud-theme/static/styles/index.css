@@ -1024,10 +1024,22 @@ main.main {
 
 #about .about .about-content .about-item p.about-item-place {
   margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#about .about .about-content .about-item p.about-item-place i {
-  color: #F9C722;
+#about .about .about-content .about-item p.about-item-place svg {
+  fill: #F9C722;
+  height: 18px;
+  width: 18px;
 }
 
 #about .about .about-content .about-item img {

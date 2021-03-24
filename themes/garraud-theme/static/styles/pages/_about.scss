@@ -60,8 +60,14 @@
 
         p.about-item-place {
           margin-top: 15px;
-          i {
-            color: $color-primary;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          svg {
+            fill: $color-primary;
+            height: 18px;
+            width: 18px;
           }
         }
         img {
