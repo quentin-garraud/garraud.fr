@@ -1,4 +1,4 @@
-var hamburger = document.querySelector(".burger-menu");
+var hamburger = document.querySelector(".burger");
 var menu = document.querySelector("#menu");
 
 function openNav() {
