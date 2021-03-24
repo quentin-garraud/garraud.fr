@@ -4,6 +4,7 @@ title = "Quentin GARRAUD"
 theme = "garraud-theme"
 enableRobotsTXT = "false"
 disableKinds = ["term"]
+googleAnalytics = "G-T5CTMXPQWS"
 
 #### Plugins ####
 [params.plugins]

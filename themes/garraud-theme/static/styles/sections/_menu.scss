@@ -1,51 +1,73 @@
 nav#menu {
-    background: rgba($color-primary-dark, 0.3);
-    backdrop-filter: blur(30px);
-    -webkit-backdrop-filter: blur(30px);
-    position: fixed;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    display: none;
-    border: $border;
-    z-index: 111;
-  
-    ul.menu-links li.menu-item{
-      margin: 40px 0;
-      text-align: start;
-  
-      a.menu-link-item{
-        font-size: 30px;
-        font-family: $heading-black;
-        color: $color-primary-light;
+  background: rgba($color-primary-dark, 0.3);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  position: fixed;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  display: none;
+  border: $border;
+  z-index: 111;
+
+  ul.menu-links li.menu-item {
+    margin: 40px 0;
+    text-align: start;
+
+    a.menu-link-item {
+      font-size: 30px;
+      font-family: $heading-black;
+      color: $color-primary-light;
+      display: inline-block;
+      padding: 15px 0;
+      position: relative;
+
+      &:after {
+        content: "";
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        display: block;
+        height: 3px;
+        left: 50%;
+        position: absolute;
+        background: $color-primary;
+        transition: width $transition ease 0s, left $transition ease 0s;
+        width: 0;
       }
-    }
-  
-    ul.social-network {
-      justify-content: flex-start;
-  
-      li.social-item{
-        margin: 40px;
-  
-        a svg{
-          $size: 25px;
-          height: $size;
-          width: $size;
-  
-        }
+
+      &:hover:after {
+        width: 100%;
+        left: 0;
       }
-    }
-    
-    &.active {
-      position: fixed;
-      display: flex;
     }
   }
 
-@media screen and (min-width: 801px) {
-    nav#menu {
-        width: 30%;
+  ul.social-network {
+    justify-content: flex-start;
+
+    li.social-item {
+      margin: 40px;
+
+      a svg {
+        $size: 25px;
+        height: $size;
+        width: $size;
+      }
     }
+  }
+
+  &.active {
+    position: fixed;
+    display: flex;
+    transition: $transition;
+
+  }
+}
+
+@media screen and (min-width: 801px) {
+  nav#menu {
+    width: 30%;
+  }
 }

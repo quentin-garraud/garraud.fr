@@ -13,6 +13,49 @@ header.header {
   justify-content: space-between;
   z-index: 111;
 
+  .burger {
+    width: 40px;
+    height: 0px;
+    cursor: pointer;
+
+    span {
+      width: 40px;
+      height: 4px;
+      background-color: transparent;
+      display: block;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: background-color $transition ease-out;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background-color: $color-primary-light;
+        transition: transform $transition ease-out;
+      }
+      &::before {
+        transform: translateY(-8px);
+      }
+      &::after {
+        transform: translateY(8px);
+      }
+    }
+    &.active span {
+      background: transparent;
+
+      &::before {
+        transform: translateY(0px) rotateZ(45deg);
+      }
+      &::after {
+        transform: translateY(0px) rotateZ(-45deg);
+      }
+    }
+  }
+
   .header-logo {
     align-self: center;
     flex-grow: 4;
@@ -24,29 +67,29 @@ header.header {
     }
   }
 
-  .burger-menu {
-    height: 15px;
-    width: 35px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    cursor: pointer;
+  // .burger-menu {
+  //   height: 15px;
+  //   width: 35px;
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: space-between;
+  //   cursor: pointer;
 
-    .burger-menu-line {
-      display: block;
-      width: 100%;
-      height: 20%;
-      background-color: $color-primary-light;
-    }
-    &.active .burger-menu-line {
-      &:first-child {
-        transform: translateY(-5px);
-      }
-      &:last-child {
-        transform: translateY(5px);
-      }
-    }
-  }
+  //   .burger-menu-line {
+  //     display: block;
+  //     width: 100%;
+  //     height: 20%;
+  //     background-color: $color-primary-light;
+  //   }
+  //   &.active .burger-menu-line {
+  //     &:first-child {
+  //       transform: translateX(-20px);
+  //     }
+  //     &:last-child {
+  //       transform: translateX(20px);
+  //     }
+  //   }
+  // }
 }
 
 @media screen and (min-width: 801px) {
