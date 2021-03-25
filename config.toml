@@ -15,8 +15,6 @@ googleAnalytics = "G-T5CTMXPQWS"
     ## Script plugins ##
     [[params.plugins.js]]
     URL = "/scripts/menu.js"
-    [[params.plugins.js]]
-    URL = "/scripts/sidebar.js"
     
 
 #### Taxonomies ####
@@ -68,6 +66,9 @@ googleAnalytics = "G-T5CTMXPQWS"
   [[params.reseaux]]
     link = "https://gitlab.com/quent1-garraud/"
     logo = '<svg class="social-network-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 .5c-6.63 0-12 5.28-12 11.792 0 5.211 3.438 9.63 8.205 11.188.6.111.82-.254.82-.567 0-.28-.01-1.022-.015-2.005-3.338.711-4.042-1.582-4.042-1.582-.546-1.361-1.335-1.725-1.335-1.725-1.087-.731.084-.716.084-.716 1.205.082 1.838 1.215 1.838 1.215 1.07 1.803 2.809 1.282 3.495.981.108-.763.417-1.282.76-1.577-2.665-.295-5.466-1.309-5.466-5.827 0-1.287.465-2.339 1.235-3.164-.135-.298-.54-1.497.105-3.121 0 0 1.005-.316 3.3 1.209.96-.262 1.98-.392 3-.398 1.02.006 2.04.136 3 .398 2.28-1.525 3.285-1.209 3.285-1.209.645 1.624.24 2.823.12 3.121.765.825 1.23 1.877 1.23 3.164 0 4.53-2.805 5.527-5.475 5.817.42.354.81 1.077.81 2.182 0 1.578-.015 2.846-.015 3.229 0 .309.21.678.825.56 4.801-1.548 8.236-5.97 8.236-11.173 0-6.512-5.373-11.792-12-11.792z"/></svg>'
+
+  [params.hero]
+  summary = "Si tu es en train de lire ces lignes, ce n'est pas par hasard. Bienvenue sur mon site personnel, je m'appelle Quentin, j'ai quelques décennies, et toujours aussi inspirées par internet. Actuellement, je travaille pour une société Bordelaise spécialisé dans les noms de domaines, [Solidnames](https://solidnames.fr/) où j'interviens en tant que Développeur Front-End et Designer. Je te propose de découvrir mes projets pour en savoir plus sur ma personne."
 
   [[params.cardhero]]
   id = "one-page"
@@ -129,27 +130,27 @@ googleAnalytics = "G-T5CTMXPQWS"
     title = "J'me présente, je m'appelle Quentin."
     tag = "à propos de moi"
     url = "/a-propos-de-moi/"
-    summary = "Je geek depuis mes 10 ans, l’informatique ma toujours inspiré, je savais déjà que j’allais en faire mon métier ! J’ai fais un stage de deux semaines chez un informaticien et ça ma beaucoup plû. Déteneur d’un BAC STI2D option SIN, j’ai intégré la formation Developpeur Web au CESI de Bordeaux en Septembre 2019 et j’ai été recruté par Solidnames pour des projets Front End."
+    summary = "Je geek, plus ou moins depuis mes 10 ans, l'informatique m'a toujours inspiré. Je savais depuis ma tendre enfance que j'allais en faire mon métier. Détenteur d'un BAC STI2D option SIN, j'ai intégré la formation Conceptrice WEB proposé par le CESI de Bordeaux, en septembre 2019 et j'ai été recruté par Solidnames pour le développement de leurs projets."
     cta = "Me découvrir"
     link = "/a-propos-de-moi/"
 
     [[params.page.item]]
     id = "bloom"
-    image = "../../assets/images/section-bloom-quentin.jpg"
+    image = "../../assets/images/section-bloom.JPG"
     title = "Bloom Clothing, ma marque de vêtement écoresponsable."
     tag = "ma marque de vêtement"
-    url = "#"
-    summary = "En 2020, j’ai décidé de me lancer dans un nouveau challenge, lancer ma propre marque de vêtement. Bloom est une marque de vêtement écoresponsable qui a pour objectif d’utiliser que des produits naturel et d’utiliser des textiles avec une certification au minimum."
+    url = "https://bloom-clothing.fr/"
+    summary = "Depuis fin 2020, je me suis lancé un nouveau challenge en créant ma propre marque de vêtement éco-responsable, Bloom Clothing. Elle a pour but de luter, à notre échelle, contre l'industrie de masse qui nous entoure. L'industrie textile est la deuxième la plus polluante au monde."
     cta = "En savoir plus"
-    link = "#"
+    link = "https://bloom-clothing.fr/"
 
     [[params.page.item]]
     id = "gaupx"
     image = "../../assets/images/section-gaupx-image.jpg"
     title = "GauPx, pour le plus grand bonheur de vos oreils."
     tag = "mon projet musical"
-    url = "#"
-    summary = "Une grande partie de ma vie est la musique, je créer et compose des musiques de style électronique depuis de nombreuses années. J’aime partager la beauté de la musique à travers des créations musicales et les retranscrires en live."
+    url = "https://gaupx.com"
+    summary = "Une grande partie de ma vie est consacré à la musique. Je créais et compose de la musique depuis de nombreuses années. J’aime partager la beauté qu'est la musique à travers des créations musicales et de les retranscrire en live."
     cta = "En savoir plus"
-    link = "#"
+    link = "https://gaupx.com"
 
