@@ -2,7 +2,6 @@
 client = "Bloom Clothing"
 date = 2021-03-25T23:00:00Z
 description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque fringilla lorem."
-draft = true
 site = "https://sewing.bloom-clothing.fr"
 thumbnail = "/uploads/hugo-thomas-quentin-vintage.jpg"
 thumbnailposition = "center"
