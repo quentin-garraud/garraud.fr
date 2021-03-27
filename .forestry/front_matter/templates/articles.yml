@@ -32,3 +32,5 @@ fields:
 - type: text
   name: site
   label: site
+pages:
+- content/projets/sewing-bloom-clothing.md
