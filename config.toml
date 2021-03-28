@@ -1,7 +1,6 @@
 baseURL = "https://dev.garraud.fr/"
 languageCode = "fr-FR"
 title = "Quentin GARRAUD"
-theme = "garraud-theme"
 enableRobotsTXT = "false"
 disableKinds = ["term"]
 googleAnalytics = "G-T5CTMXPQWS"

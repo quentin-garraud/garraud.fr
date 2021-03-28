@@ -1,2 +1,23 @@
 .DS_Store
 desktop.ini
+
+# Hugo
+public/
+resources/_gen/
+hugo_stats.json
+
+# Deploy
+.env
+.netlify
+.now
+
+# Node
+node_modules
+yarn.lock
+
+# macOS
+.DS_Store
+
+# Editeurs
+.vscode/
+.idea/
