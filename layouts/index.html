@@ -79,9 +79,17 @@
             <img class="image-projet" src="{{.image}}" alt="{{.title}}" title="{{.title}}">
             <div class="content-summary">
                 <a href="{{.url}}" class="tag-category">{{.tag}}</a>
-                <a href="{{.link}}"><h2 class="title-project">{{.title}}</h2></a>
+                {{ if .blank }}
+                    <a href="{{.link}}" target="_blank"><h2 class="title-project">{{.title}}</h2></a>
+                {{ else }}
+                    <a href="{{.link}}"><h2 class="title-project">{{.title}}</h2></a>
+                {{ end }}
                 <p class="summary">{{.summary}}</p>
-                <a href="{{.link}}" class="link-button">{{.cta}}  {{ if .icon }}<i class="{{.icon}}"></i>{{else}}<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12"> <path id="Tracé_1" data-name="Tracé 1" d="M0,0H12V12H0Z" fill="none"></path> <path id="Tracé_2" data-name="Tracé 2" d="M10.086,7.611,7.4,4.929l.707-.707L12,8.111,8.111,12,7.4,11.293l2.682-2.682H4v-1Z" transform="translate(-2 -2.111)"></path> </svg>{{ end }}</a>
+                {{ if .blank }}
+                    <a href="{{.link}}" target="_blank" class="link-button">{{.cta}}  {{ if .icon }}<i class="{{.icon}}"></i>{{else}}<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12"> <path id="Tracé_1" data-name="Tracé 1" d="M0,0H12V12H0Z" fill="none"></path> <path id="Tracé_2" data-name="Tracé 2" d="M10.086,7.611,7.4,4.929l.707-.707L12,8.111,8.111,12,7.4,11.293l2.682-2.682H4v-1Z" transform="translate(-2 -2.111)"></path> </svg>{{ end }}</a>
+                {{ else }}
+                    <a href="{{.link}}" class="link-button">{{.cta}}  {{ if .icon }}<i class="{{.icon}}"></i>{{else}}<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12"> <path id="Tracé_1" data-name="Tracé 1" d="M0,0H12V12H0Z" fill="none"></path> <path id="Tracé_2" data-name="Tracé 2" d="M10.086,7.611,7.4,4.929l.707-.707L12,8.111,8.111,12,7.4,11.293l2.682-2.682H4v-1Z" transform="translate(-2 -2.111)"></path> </svg>{{ end }}</a>
+                {{ end }}
             </div>
         </div>
         {{ end }}
