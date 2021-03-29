@@ -7,7 +7,7 @@
             margin-top: 50px;
             width: 100%;
             max-width: 100%;
-            height: 200px;
+            height: 225px;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
@@ -16,6 +16,9 @@
             div.category-header{
                 align-self: flex-end;
                 margin: 10px;
+            }
+            .tag-category{
+                margin: 0;
             }
 
             h1.heading-title{
@@ -50,12 +53,6 @@
         }
         .content-page{
             &.article-article{
-                margin-top: 20px;
-            }
-            p, h2, h3, h4{
-                margin-bottom: 10px;
-            }
-            h2, h3, h4{
                 margin-top: 20px;
             }
             ul li{
