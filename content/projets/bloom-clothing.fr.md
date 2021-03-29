@@ -2,7 +2,7 @@
 title: "Mon projet éco-responsable, Bloom Clothing !"
 date: 2021-03-18T20:44:09+01:00
 draft: false
-description: "Bloom Clothing est une petite marque de vêtement éco-responsable, créée en 2020 à Bordeaux qui à pour but de luter à leur niveau contre l'industrie de masque nous entoures."
+description: "Bloom Clothing est une petite marque de vêtements écoresponsable, créée en 2020 à Bordeaux qui a pour but de luter à leur niveau contre l'industrie de masse nous entoure."
 url: "/projets/mon-projet-eco-responsable-bloom-clothing/"
 
 thumbnail: "/../../assets/images/t-shirt-portant.jpg"
@@ -20,8 +20,5 @@ desktop:
     - image: "/../../assets/images/screencapture-bloom-clothing-fr-article.png"
       title: "Capture d'écran Bloom Clothing Side - Page produit"
 
-# mobile:
-#     - image: ""
-#       title: ""
 ---
-Bloom Clothing est une petite marque de vêtement éco-responsable, créée en 2020 à Bordeaux qui à pour but de luter à leur niveau contre l'industrie de masque nous entoures. Ce site à été créé sur WordPress avec l'extention WooCommerce pour gerer les produits de la boutique. 
+Bloom Clothing est une petite marque de vêtements écoresponsable, créée en 2020 à Bordeaux qui a pour but de luter à leur niveau contre l'industrie de masse nous entoure. Ce site a été créé sur WordPress avec l'extension WooCommerce pour gérer les produits de la boutique. 
