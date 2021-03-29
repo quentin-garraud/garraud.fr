@@ -70,29 +70,34 @@ googleAnalytics = "G-T5CTMXPQWS"
   summary = "Si tu es en train de lire ces lignes, ce n'est pas par hasard. Bienvenue sur mon site personnel, je m'appelle Quentin, j'ai quelques décennies, et toujours aussi inspirées par internet. Actuellement, je travaille pour une société Bordelaise spécialisé dans les noms de domaines, [Solidnames](https://solidnames.fr/) où j'interviens en tant que Développeur Front-End et Designer. Je te propose de découvrir mes projets pour en savoir plus sur ma personne."
 
   [[params.cardhero]]
-  id = "one-page"
-  icone = "../../assets/images/monitor-site-one-page-hero-card.svg"
-  name = "Site One Page"
-  description = "Je sais créer des sites web, simple efficace afin de présenter une activiter sur une seule page."
+  id = "learn"
+  icone = "../../assets/images/icones/clock.svg"
+  name = "+500"
+  description = "Heures passées à apprendre et regarder des tutos."
 
   [[params.cardhero]]
-  id = "e-commerce"
-  icone = "../../assets/images/e-commerce-hero-card.svg"
-  name = "Site e-commerce"
-  description = "Je met en place un site marchand, sur mesure, afin de digitaliser votre boutique, marque, grace à aux outils adéquates."
+  id = "published-projets"
+  icone = "../../assets/images/icones/folder.svg"
+  name = "10"
+  description = "Projets publié sur la toile."
   
   [[params.cardhero]]
-  id = "design"
-  icone = "../../assets/images/design-hero-card.svg"
-  name = "Design"
-  description = "Je créer votre design sur mesure qui respecte un maximum votre charte graphique."
+  id = "unpublished-projets"
+  icone = "../../assets/images/icones/pause.svg"
+  name = "+100"
+  description = "Projets commencés mais jamais terminés."
   
   [[params.cardhero]]
-  id = "seo"
-  icone = "../../assets/images/seo-hero-card.svg"
-  name = "SEO"
-  description = " Je vous aide à apparaître dans les premières pages de google grace à un réferencement local et à la creation de contenu."
+  id = "cofee"
+  icone = "../../assets/images/icones/cofee.svg"
+  name = "0"
+  description = "Café consommé (eh oui, il n'y a pas besoin de ça)."
 
+  [[params.cardhero]]
+  id = "cofee"
+  icone = "../../assets/images/icones/document.svg"
+  name = "+3"
+  description = "Années d'expérience dans le domaine."
 
   [params.tool]
     [[params.tool.item]]
