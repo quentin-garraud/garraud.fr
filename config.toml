@@ -93,12 +93,6 @@ googleAnalytics = "G-T5CTMXPQWS"
   name = "0"
   description = "Café consommé (eh oui, il n'y a pas besoin de ça)."
 
-  [[params.cardhero]]
-  id = "cofee"
-  icone = "../../assets/images/icones/document.svg"
-  name = "+3"
-  description = "Années d'expérience dans le domaine."
-
   [params.tool]
     [[params.tool.item]]
     name = "Visual Studio Code"
