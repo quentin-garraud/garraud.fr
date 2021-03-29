@@ -376,6 +376,9 @@ ul.social-network li.social-item a svg:hover {
     height: 20px;
     width: auto;
   }
+  #tools .tool-item-container .tool-item-type {
+    font-size: 0.9rem;
+  }
   .card {
     border-right: none;
   }
