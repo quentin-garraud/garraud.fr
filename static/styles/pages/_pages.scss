@@ -13,7 +13,7 @@
             align-items: flex-start;
             justify-content: space-between;
 
-            div.category-header{
+            .category-header{
                 align-self: flex-end;
                 margin: 10px;
             }
@@ -108,7 +108,7 @@
                 margin-top: 90px;
                 height: 500px;
                 
-                div.category-header{
+                .category-header{
                     align-self: flex-end;
                     margin: 30px;
                 }
