@@ -44,8 +44,8 @@ googleAnalytics = "G-T5CTMXPQWS"
     weight = 4
 
   [[menu.main]]
-    name = "Boîte à outils"
-    url = "/la-boite-a-outils-du-web/"
+    name = "Outils que j’utilise"
+    url = "/liste-d-outil-que-j-utilise/"
     weight = 5
 
   
