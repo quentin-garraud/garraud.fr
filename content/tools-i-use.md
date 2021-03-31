@@ -76,9 +76,9 @@ list :
     typetool: "IDE"
     logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1200px-Visual_Studio_Code_1.35_icon.svg.png"
 
-  - tool : "Adobe XD"
-    typetool: "Design d'interface"
-    logo: "https://cdn2.clc2l.fr/t/a/d/adobe-xd-HzedyS.png"
+  # - tool : "Adobe XD"
+  #   typetool: "Design d'interface"
+  #   logo: "https://cdn2.clc2l.fr/t/a/d/adobe-xd-HzedyS.png"
 
   - tool : "Adobe Indesign"
     typetool: "Mise en page"
