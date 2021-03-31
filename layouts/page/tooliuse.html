@@ -17,11 +17,7 @@
       </div>
       <div class="meta-item published">
         <span>Publié</span>
-        <p>{{ .Params.Date }}</p>
-      </div>
-      <div class="meta-item update">
-        <span>Mis à jour</span>
-        <p>{{ .Params.Lastmod }}</p>
+        <p>{{ .Date.Format "2 Jan 2006" }}</p>
       </div>
     </div>
     <div class="content-page">
