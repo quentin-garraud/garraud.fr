@@ -198,7 +198,11 @@ img {
   }
 }
 
-.tag-category {
+li.tag-category-list {
+  list-style: none;
+}
+
+li.tag-category-list .tag-category {
   padding: 8px 15px;
   background-color: #F9C722;
   color: #000;
@@ -756,7 +760,7 @@ main.main {
           justify-content: space-between;
 }
 
-#content .container-page .heading-page div.category-header {
+#content .container-page .heading-page .category-header {
   -ms-flex-item-align: end;
       align-self: flex-end;
   margin: 10px;
@@ -868,7 +872,7 @@ main.main {
     margin-top: 90px;
     height: 500px;
   }
-  #content .container-page .heading-page div.category-header {
+  #content .container-page .heading-page .category-header {
     -ms-flex-item-align: end;
         align-self: flex-end;
     margin: 30px;

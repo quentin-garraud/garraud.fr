@@ -1,10 +1,14 @@
-.tag-category {
-  padding: 8px 15px;
-  background-color: $color-primary;
-  color: $color-black;
-  font-family: $body-bold;
-  display: inline-block;
-  margin-bottom: 20px;
+li.tag-category-list{
+  list-style: none;
+  
+  .tag-category {
+    padding: 8px 15px;
+    background-color: $color-primary;
+    color: $color-black;
+    font-family: $body-bold;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
 }
 
 .link-button {
