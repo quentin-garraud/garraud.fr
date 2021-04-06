@@ -963,6 +963,10 @@ main.main {
   margin: 50px 0;
 }
 
+#about .heading .heading-text p {
+  margin-bottom: 10px;
+}
+
 #about .heading .heading-text .heading-text-description {
   margin: 20px 0;
 }
