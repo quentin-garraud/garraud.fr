@@ -43,10 +43,10 @@ googleAnalytics = "G-T5CTMXPQWS"
     url = "/projets/"
     weight = 4
 
-  [[menu.main]]
-    name = "Outils que j’utilise"
-    url = "/liste-d-outil-que-j-utilise/"
-    weight = 5
+  # [[menu.main]]
+  #   name = "Outils que j’utilise"
+  #   url = "/liste-d-outil-que-j-utilise/"
+  #   weight = 5
 
   
 
