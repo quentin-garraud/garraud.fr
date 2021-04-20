@@ -2,7 +2,7 @@
 desktop.ini
 
 # Hugo
-public/
+/public/
 resources/_gen/
 hugo_stats.json
 
