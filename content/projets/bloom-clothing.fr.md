@@ -1,7 +1,7 @@
 ---
 title: "Mon projet éco-responsable, Bloom Clothing !"
 date: 2021-03-18T20:44:09+01:00
-draft: false
+draft: true
 description: "Bloom Clothing est une petite marque de vêtements écoresponsable, créée en 2020 à Bordeaux qui a pour but de luter à leur niveau contre l'industrie de masse nous entoure."
 url: "/projets/mon-projet-eco-responsable-bloom-clothing/"
 
