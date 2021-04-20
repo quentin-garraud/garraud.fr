@@ -815,6 +815,10 @@ main.main {
   margin-top: 20px;
 }
 
+#content .container-page .content-page.article-article h2, #content .container-page .content-page.article-article h3, #content .container-page .content-page.article-article h4, #content .container-page .content-page.article-article h5, #content .container-page .content-page.article-article h6 {
+  margin: 40px 0 10px 0;
+}
+
 #content .container-page .content-page ul li {
   line-height: 18px;
   font-size: 0.75rem;
@@ -834,7 +838,7 @@ main.main {
 #content .container-page .content-page blockquote {
   border-left: 4px solid #F9C722;
   background-color: #032c2c;
-  padding: 10px 8px 8px 8px;
+  padding: 10px;
   margin-bottom: 10px;
 }
 

@@ -54,6 +54,10 @@
         .content-page{
             &.article-article{
                 margin-top: 20px;
+
+                h2, h3, h4, h5, h6{
+                    margin: 40px 0 10px 0;
+                }
             }
             ul li{
                 @include body-mobile;
@@ -71,7 +75,7 @@
             blockquote{
                 border-left: 4px solid $color-primary;
                 background-color: lighten($color-primary-dark, 2%);
-                padding: 10px 8px 8px 8px;
+                padding: 10px;
                 margin-bottom: 10px;
             }
             .view-images{
