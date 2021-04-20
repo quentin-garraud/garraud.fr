@@ -1,7 +1,7 @@
 ---
 title: "TOP 10 des raccourcis VSCode que j'utilise tous les jours !"
 date: 2021-04-20T21:20:50+02:00
-draft: true
+draft: false
 description: ""
 url: "/articles/top-10-raccourcis-clavier-vscode-2021"
 
