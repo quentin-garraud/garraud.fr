@@ -13,9 +13,10 @@ categories: ["ide"]
 
 summary: "Je vous présente une liste de raccourcis clavier VS Code que j'utilise quasiment tous les jours. Je vous recommande de les connaître,  elle va vous faire gagner du temps et de la productivité !"
 ---
+
 > Bienvenue sur mon premier article de blog !
 
-Je vous présente, pour cela, une liste de raccourcis clavier VS Code que j'utilise quasiment tous les jours (quand je code quoi !). Je vous recommande de les connaître,  elle va vous faire gagner du temps et de la productivité!
+Je vous présente, pour cela, une liste de raccourcis clavier VS Code que j'utilise quasiment tous les jours (quand je code quoi !). Je vous recommande de les connaître, elle va vous faire gagner du temps et de la productivité!
 
 ## 1. Ctrl+P : Affiche la barre de recherche pour rechercher des fichiers
 
@@ -27,9 +28,9 @@ Si vous naviguerez entre les fichiers tout le temps, vous pouvez taper le nom du
 
 Mac : Cmd + Shift + P
 
-Affiche la palette de commandes dans laquelle vous pouvez rechercher une action. Je l'utilise souvent pour formater mon code avec la commande *Format document.* 
+Affiche la palette de commandes dans laquelle vous pouvez rechercher une action. Je l'utilise souvent pour formater mon code avec la commande _Format document._
 
-## 3. Ctrl + B :  Affiche la barre latérale
+## 3. Ctrl + B : Affiche la barre latérale
 
 Mac : Cmd + B
 
@@ -69,7 +70,7 @@ Propose de nombreux paramètre tel que l'achèvement du code, complétion du cod
 
 Mac : Cmd + C
 
-Copie la ligne sans sélection. Vous pouvez couper la ligne avec le raccourci  Ctrl + X (Cmd + X).
+Copie la ligne sans sélection. Vous pouvez couper la ligne avec le raccourci Ctrl + X (Cmd + X).
 
 ## 10. Shift + Alt + Down : Duplique la ligne courante
 

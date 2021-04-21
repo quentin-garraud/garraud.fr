@@ -1,105 +1,231 @@
 {{ define "head" }}
-    {{ partial "head.html" . }}
+  {{ partial "head.html" . }}
 {{ end }}
 
 {{ define "main" }}
-<main class="main">
-    {{with .Site.Params.hero}}
-    <section id="section-hero-banner">
+  <main class="main">
+    {{ with .Site.Params.hero }}
+      <section id="section-hero-banner">
         <li class="tag-category-list">
-            <a href="/a-propos-de-moi/" class="tag-category">Moi c'est Quentin</a>
+          <a href="/a-propos-de-moi/" class="tag-category">Moi c'est Quentin</a>
         </li>
-        <h1 class="section-hero-title">Développeur <span class="decoration">,<br></span> Designer Web</h1>
+        <h1 class="section-hero-title">
+          Développeur <span class="decoration">,<br /></span> Designer Web
+        </h1>
         <h4 class="section-hero-subtitle">et pas que...</h4>
         <p class="summary">
-            {{ .summary | markdownify}}
+          {{ .summary | markdownify }}
         </p>
-        <a href="/projets/" class="link-button">Tous mes projets <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12"><path id="Tracé_1" data-name="Tracé 1" d="M0,0H12V12H0Z" fill="none"></path><path id="Tracé_2" data-name="Tracé 2" d="M10.086,7.611,7.4,4.929l.707-.707L12,8.111,8.111,12,7.4,11.293l2.682-2.682H4v-1Z" transform="translate(-2 -2.111)"></path></svg></a>
-    </section>
+        <a href="/projets/" class="link-button"
+          >Tous mes projets
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
+            <path
+              id="Tracé_1"
+              data-name="Tracé 1"
+              d="M0,0H12V12H0Z"
+              fill="none"
+            ></path>
+            <path
+              id="Tracé_2"
+              data-name="Tracé 2"
+              d="M10.086,7.611,7.4,4.929l.707-.707L12,8.111,8.111,12,7.4,11.293l2.682-2.682H4v-1Z"
+              transform="translate(-2 -2.111)"
+            ></path></svg></a>
+      </section>
     {{ end }}
     <section id="cards-hero">
-        {{ range .Site.Params.cardhero }}
-        <div class="card" id="card-{{.id}}">
-            <img src="{{.icone }}" alt="Pictogramme - {{.name }}" title="Pictogramme - {{.name }}" class="icon">
-            <h3>{{.name}}</h3>
-            <p>{{.description}}</p>
+      {{ range .Site.Params.cardhero }}
+        <div class="card" id="card-{{ .id }}">
+          <img
+            src="{{ .icone }}"
+            alt="Pictogramme - {{ .name }}"
+            title="Pictogramme - {{ .name }}"
+            class="icon"
+          />
+          <h3>{{ .name }}</h3>
+          <p>{{ .description }}</p>
         </div>
-        {{ end }}
+      {{ end }}
     </section>
     <section id="section-projects">
-        {{ with $.Site.GetPage "section" "articles" }}
+      {{ with $.Site.GetPage "section" "articles" }}
         {{ range first 1 .Data.Pages }}
-        <div class="project">
-            <img class="image-projet" src="{{.Params.thumbnail}}" alt="">
+          <div class="project">
+            <img class="image-projet" src="{{ .Params.thumbnail }}" alt="" />
             <div class="content-summary">
-                {{ partial "categories.html" .}}
-                <a href="{{.Permalink}}"><h2 class="title-project">{{.Title}}</h2></a>
-                <p class="summary">{{.Summary}}</p>
-                <a href="{{.Permalink}}" class="link-button">Lire l'article <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12"> <path id="Tracé_1" data-name="Tracé 1" d="M0,0H12V12H0Z" fill="none"></path> <path id="Tracé_2" data-name="Tracé 2" d="M10.086,7.611,7.4,4.929l.707-.707L12,8.111,8.111,12,7.4,11.293l2.682-2.682H4v-1Z" transform="translate(-2 -2.111)"></path> </svg></a>
+              {{ partial "categories.html" . }}
+              <a href="{{ .Permalink }}"
+                ><h2 class="title-project">{{ .Title }}</h2></a
+              >
+              <p class="summary">{{ .Summary }}</p>
+              <a href="{{ .Permalink }}" class="link-button"
+                >Lire l'article
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
+                  <path
+                    id="Tracé_1"
+                    data-name="Tracé 1"
+                    d="M0,0H12V12H0Z"
+                    fill="none"
+                  ></path>
+                  <path
+                    id="Tracé_2"
+                    data-name="Tracé 2"
+                    d="M10.086,7.611,7.4,4.929l.707-.707L12,8.111,8.111,12,7.4,11.293l2.682-2.682H4v-1Z"
+                    transform="translate(-2 -2.111)"
+                  ></path></svg></a>
             </div>
-        </div>
+          </div>
         {{ end }}
-        {{ end }}
-        {{ with $.Site.GetPage "section" "projets" }}
+      {{ end }}
+      {{ with $.Site.GetPage "section" "projets" }}
         {{ range first 1 .Data.Pages }}
-        <div class="project">
-            <img class="image-projet" src="{{.Params.thumbnail}}" alt="">
-            <div class="content-summary">                    
-                {{ partial "type-de-projet.html" .}}
-                <a href="{{.Permalink}}"><h2 class="title-project">{{.Title}}</h2></a>
-                <p class="summary">{{.Summary}}</p>
-                <a href="{{.Permalink}}" class="link-button">Regarder le projet <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12"> <path id="Tracé_1" data-name="Tracé 1" d="M0,0H12V12H0Z" fill="none"></path> <path id="Tracé_2" data-name="Tracé 2" d="M10.086,7.611,7.4,4.929l.707-.707L12,8.111,8.111,12,7.4,11.293l2.682-2.682H4v-1Z" transform="translate(-2 -2.111)"></path> </svg></a>
+          <div class="project">
+            <img class="image-projet" src="{{ .Params.thumbnail }}" alt="" />
+            <div class="content-summary">
+              {{ partial "type-de-projet.html" . }}
+              <a href="{{ .Permalink }}"
+                ><h2 class="title-project">{{ .Title }}</h2></a
+              >
+              <p class="summary">{{ .Summary }}</p>
+              <a href="{{ .Permalink }}" class="link-button"
+                >Regarder le projet
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
+                  <path
+                    id="Tracé_1"
+                    data-name="Tracé 1"
+                    d="M0,0H12V12H0Z"
+                    fill="none"
+                  ></path>
+                  <path
+                    id="Tracé_2"
+                    data-name="Tracé 2"
+                    d="M10.086,7.611,7.4,4.929l.707-.707L12,8.111,8.111,12,7.4,11.293l2.682-2.682H4v-1Z"
+                    transform="translate(-2 -2.111)"
+                  ></path></svg></a>
             </div>
-        </div>
+          </div>
         {{ end }}
-        {{ end }}
-        {{ with .Site.Params.tool }}
+      {{ end }}
+      {{ with .Site.Params.tool }}
         <div class="project" id="section-outils-que-jutilise">
-            <img class="image-projet" src="../../assets/images/image-outils-que-jutilise-old.jpg" alt="">
-            <div class="content-summary">
-                <li class="tag-category-list">
-                    <a href="/liste-d-outil-que-j-utilise/" class="tag-category">outils que j'utilise</a>
-                </li>
-                <h2 class="title-project">Voici une petite liste d’outil que j’utilise tous les jours.</h2>
-                <div class="summary" id="tools">
-                    {{ range .item }}
-                    <div class="tool-item-container">
-                        <img class="tool-item-logo" src="{{ .logo }}" alt="{{.name}} - {{.type}}">
-                        <div class="tool-item-text">
-                            <p class="tool-item-title">{{.name}}</p>
-                            <p class="tool-item-type">{{.type}}</p>
-                        </div>
-                    </div>
-                    {{ end }}
+          <img
+            class="image-projet"
+            src="../../assets/images/image-outils-que-jutilise-old.jpg"
+            alt=""
+          />
+          <div class="content-summary">
+            <li class="tag-category-list">
+              <a href="/liste-d-outil-que-j-utilise/" class="tag-category"
+                >outils que j'utilise</a
+              >
+            </li>
+            <h2 class="title-project">
+              Voici une petite liste d’outil que j’utilise tous les jours.
+            </h2>
+            <div class="summary" id="tools">
+              {{ range .item }}
+                <div class="tool-item-container">
+                  <img
+                    class="tool-item-logo"
+                    src="{{ .logo }}"
+                    alt="{{ .name }} - {{ .type }}"
+                  />
+                  <div class="tool-item-text">
+                    <p class="tool-item-title">{{ .name }}</p>
+                    <p class="tool-item-type">{{ .type }}</p>
+                  </div>
                 </div>
+              {{ end }}
+            </div>
 
-                <a href="/liste-d-outil-que-j-utilise/" class="link-button">Afficher plus <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12"> <path id="Tracé_1" data-name="Tracé 1" d="M0,0H12V12H0Z" fill="none"></path> <path id="Tracé_2" data-name="Tracé 2" d="M10.086,7.611,7.4,4.929l.707-.707L12,8.111,8.111,12,7.4,11.293l2.682-2.682H4v-1Z" transform="translate(-2 -2.111)"></path> </svg></a>
-            </div>
+            <a href="/liste-d-outil-que-j-utilise/" class="link-button"
+              >Afficher plus
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
+                <path
+                  id="Tracé_1"
+                  data-name="Tracé 1"
+                  d="M0,0H12V12H0Z"
+                  fill="none"
+                ></path>
+                <path
+                  id="Tracé_2"
+                  data-name="Tracé 2"
+                  d="M10.086,7.611,7.4,4.929l.707-.707L12,8.111,8.111,12,7.4,11.293l2.682-2.682H4v-1Z"
+                  transform="translate(-2 -2.111)"
+                ></path></svg></a>
+          </div>
         </div>
-        {{ end }}
-        {{ with .Site.Params.page }}
-        {{ range .item }}            
-        <div class="project" id="section-{{.id}}">
-            <img class="image-projet" src="{{.image}}" alt="{{.title}}" title="{{.title}}">
+      {{ end }}
+      {{ with .Site.Params.page }}
+        {{ range .item }}
+          <div class="project" id="section-{{ .id }}">
+            <img
+              class="image-projet"
+              src="{{ .image }}"
+              alt="{{ .title }}"
+              title="{{ .title }}"
+            />
             <div class="content-summary">
-                <li class="tag-category-list">
-                    <a href="{{.url}}" class="tag-category">{{.tag}}</a>
-                </li>
-                {{ if .blank }}
-                    <a href="{{.link}}" target="_blank"><h2 class="title-project">{{.title}}</h2></a>
+              <li class="tag-category-list">
+                <a href="{{ .url }}" class="tag-category">{{ .tag }}</a>
+              </li>
+              {{ if .blank }}
+                <a href="{{ .link }}" target="_blank"
+                  ><h2 class="title-project">{{ .title }}</h2></a
+                >
                 {{ else }}
-                    <a href="{{.link}}"><h2 class="title-project">{{.title}}</h2></a>
-                {{ end }}
-                <p class="summary">{{.summary}}</p>
-                {{ if .blank }}
-                    <a href="{{.link}}" target="_blank" class="link-button">{{.cta}}  {{ if .icon }}<i class="{{.icon}}"></i>{{else}}<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12"> <path id="Tracé_1" data-name="Tracé 1" d="M0,0H12V12H0Z" fill="none"></path> <path id="Tracé_2" data-name="Tracé 2" d="M10.086,7.611,7.4,4.929l.707-.707L12,8.111,8.111,12,7.4,11.293l2.682-2.682H4v-1Z" transform="translate(-2 -2.111)"></path> </svg>{{ end }}</a>
+                <a href="{{ .link }}"
+                  ><h2 class="title-project">{{ .title }}</h2></a
+                >
+              {{ end }}
+              <p class="summary">{{ .summary }}</p>
+              {{ if .blank }}
+                <a href="{{ .link }}" target="_blank" class="link-button"
+                  >{{ .cta }}
+                  {{ if .icon }}
+                    <i class="{{ .icon }}"></i>{{ else }}<svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 12 12"
+                    >
+                      <path
+                        id="Tracé_1"
+                        data-name="Tracé 1"
+                        d="M0,0H12V12H0Z"
+                        fill="none"
+                      ></path>
+                      <path
+                        id="Tracé_2"
+                        data-name="Tracé 2"
+                        d="M10.086,7.611,7.4,4.929l.707-.707L12,8.111,8.111,12,7.4,11.293l2.682-2.682H4v-1Z"
+                        transform="translate(-2 -2.111)"
+                      ></path></svg>{{ end }}
+                </a>
                 {{ else }}
-                    <a href="{{.link}}" class="link-button">{{.cta}}  {{ if .icon }}<i class="{{.icon}}"></i>{{else}}<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12"> <path id="Tracé_1" data-name="Tracé 1" d="M0,0H12V12H0Z" fill="none"></path> <path id="Tracé_2" data-name="Tracé 2" d="M10.086,7.611,7.4,4.929l.707-.707L12,8.111,8.111,12,7.4,11.293l2.682-2.682H4v-1Z" transform="translate(-2 -2.111)"></path> </svg>{{ end }}</a>
-                {{ end }}
+                <a href="{{ .link }}" class="link-button"
+                  >{{ .cta }}
+                  {{ if .icon }}
+                    <i class="{{ .icon }}"></i>{{ else }}<svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 12 12"
+                    >
+                      <path
+                        id="Tracé_1"
+                        data-name="Tracé 1"
+                        d="M0,0H12V12H0Z"
+                        fill="none"
+                      ></path>
+                      <path
+                        id="Tracé_2"
+                        data-name="Tracé 2"
+                        d="M10.086,7.611,7.4,4.929l.707-.707L12,8.111,8.111,12,7.4,11.293l2.682-2.682H4v-1Z"
+                        transform="translate(-2 -2.111)"
+                      ></path></svg>{{ end }}
+                </a>
+              {{ end }}
             </div>
-        </div>
+          </div>
         {{ end }}
-        {{ end }}
+      {{ end }}
     </section>
-</main>
+  </main>
 {{ end }}

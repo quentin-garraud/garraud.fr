@@ -1,75 +1,83 @@
-{{ define "head" }} {{ partial "head.html" . }} {{ end }} {{ define "main" }}
-<div class="container-page">
-  <div
-    class="heading-page"
-    style="background: linear-gradient(180deg, rgba(2, 28, 28, 0.18) 0%, #021D1D 100%),  url('{{ .Params.thumbnail }}') no-repeat; background-size: {{ .Params.thumbnailsize }}; background-position: {{ .Params.thumbnailposition }}"
-  >
-    <ul class="category-header">{{ partial "type-de-projet.html" .}}</ul>
-    <h1 class="heading-title">{{.Params.Title}}</h1>
-  </div>
-  <div class="meta-page">
-    <div class="meta-item type">
-      <span>Type de page</span>
-      <p>
-        <a href="/projets/"><strong>Projet</strong></a>
-      </p>
+{{ define "head" }} {{ partial "head.html" . }} {{ end }}
+{{ define "main" }}
+  <div class="container-page">
+    <div
+      class="heading-page"
+      style="background: linear-gradient(180deg, rgba(2, 28, 28, 0.18) 0%, #021D1D 100%),  url('{{ .Params.thumbnail }}') no-repeat; background-size: {{ .Params.thumbnailsize }}; background-position: {{ .Params.thumbnailposition }}"
+    >
+      <ul class="category-header">
+        {{ partial "type-de-projet.html" . }}
+      </ul>
+      <h1 class="heading-title">{{ .Params.Title }}</h1>
     </div>
-    <div class="meta-item published">
-      <span>Type de projet</span>
+    <div class="meta-page">
+      <div class="meta-item type">
+        <span>Type de page</span>
+        <p>
+          <a href="/projets/"><strong>Projet</strong></a>
+        </p>
+      </div>
+      <div class="meta-item published">
+        <span>Type de projet</span>
 
-      {{ $taxonomy := "type-de-projet" }} {{ with .Param $taxonomy }} 
-      {{ range $index, $category := . }} {{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $category) -}}
-      <p>
-        <a href="{{ .Permalink | absURL }}"
-          ><strong>{{ $category | urlize }}</strong></a
-        >
-      </p>
-      {{- end -}} {{- end -}} {{ end }}
-      <p>{{ .Params.type_de_projet }}</p>
-    </div>
-    <div class="meta-item update">
-      <span>Client</span>
-      <p>{{ .Params.client }}</p>
-    </div>
-  </div>
-  <div class="content-page">
-    <div class="client-link">
-      <p>
-        <strong>Lien du site :</strong>
-        <a href="{{.Params.site}}" target="_blank">{{.Params.site}}</a>
-      </p>
-    </div>
-    <div class="content">{{.Content}}</div>
-
-    {{ if .Params.desktop }}
-    <div class="view-images">
-      <h2 class="section-view-title">Vue desktop</h2>
-      <div class="image-project">
-        {{ range .Params.desktop }}
-        <img
-          class="image-project-desktop"
-          src="{{.image}}"
-          alt="{{.title}}"
-          title="{{.title}}"
-        />
+        {{ $taxonomy := "type-de-projet" }}
+        {{ with .Param $taxonomy }}
+          {{ range $index, $category := . }}
+            {{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $category) -}}
+              <p>
+                <a href="{{ .Permalink | absURL }}"
+                  ><strong>{{ $category | urlize }}</strong></a
+                >
+              </p>
+            {{- end -}}
+          {{- end -}}
         {{ end }}
+        <p>{{ .Params.type_de_projet }}</p>
+      </div>
+      <div class="meta-item update">
+        <span>Client</span>
+        <p>{{ .Params.client }}</p>
       </div>
     </div>
-    {{ end }} {{ if .Params.mobile }}
-    <div class="view-images">
-      <h2 class="section-view-title">Vue mobile</h2>
-      <div class="image-project">
-        {{ range .Params.mobile }}
-        <img
-          class="image-project-mobile"
-          src="{{.image}}"
-          alt="{{.title}}"
-          title="{{.title}}"
-        />
-        {{ end }}
+    <div class="content-page">
+      <div class="client-link">
+        <p>
+          <strong>Lien du site :</strong>
+          <a href="{{ .Params.site }}" target="_blank">{{ .Params.site }}</a>
+        </p>
       </div>
+      <div class="content">{{ .Content }}</div>
+
+      {{ if .Params.desktop }}
+        <div class="view-images">
+          <h2 class="section-view-title">Vue desktop</h2>
+          <div class="image-project">
+            {{ range .Params.desktop }}
+              <img
+                class="image-project-desktop"
+                src="{{ .image }}"
+                alt="{{ .title }}"
+                title="{{ .title }}"
+              />
+            {{ end }}
+          </div>
+        </div>
+      {{ end }}
+      {{ if .Params.mobile }}
+        <div class="view-images">
+          <h2 class="section-view-title">Vue mobile</h2>
+          <div class="image-project">
+            {{ range .Params.mobile }}
+              <img
+                class="image-project-mobile"
+                src="{{ .image }}"
+                alt="{{ .title }}"
+                title="{{ .title }}"
+              />
+            {{ end }}
+          </div>
+        </div>
+      {{ end }}
     </div>
-    {{ end }}
   </div>
-</div>
 {{ end }}

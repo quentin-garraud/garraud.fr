@@ -13,10 +13,11 @@ type-de-projet: ["e-commerce"]
 client: "Atelier violette"
 site: "https://atelier-violette.fr/"
 
-desktop: 
-    - image: "/../../assets/images/screencapture-atelierviolette-fr-accueil.png"
-      title: "Capture d'écran Atelier Violette - Page d'accueil"
-    - image: "/../../assets/images/screencapture-atelierviolette-fr-produit.png"
-      title: "Capture d'écran Atelier Violette - Page d'accueil"
+desktop:
+  - image: "/../../assets/images/screencapture-atelierviolette-fr-accueil.png"
+    title: "Capture d'écran Atelier Violette - Page d'accueil"
+  - image: "/../../assets/images/screencapture-atelierviolette-fr-produit.png"
+    title: "Capture d'écran Atelier Violette - Page d'accueil"
 ---
+
 Atelier Violette est une entreprise de teinture végétale et naturelle sur textile. Cette boutique a été créé sur WordPress avec l'extension WooCommerce qui permet de gérer les produits de la boutique.
