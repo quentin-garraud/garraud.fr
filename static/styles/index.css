@@ -209,6 +209,12 @@ li.tag-category-list .tag-category {
   font-family: "Poppins Bold", Arial, sans-serif;
   display: inline-block;
   margin-bottom: 20px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+li.tag-category-list .tag-category:hover {
+  background-color: #e2af06;
 }
 
 .link-button {
@@ -815,8 +821,16 @@ main.main {
   margin-top: 20px;
 }
 
-#content .container-page .content-page.article-article h2, #content .container-page .content-page.article-article h3, #content .container-page .content-page.article-article h4, #content .container-page .content-page.article-article h5, #content .container-page .content-page.article-article h6 {
+#content .container-page .content-page.article-article h2,
+#content .container-page .content-page.article-article h3,
+#content .container-page .content-page.article-article h4,
+#content .container-page .content-page.article-article h5,
+#content .container-page .content-page.article-article h6 {
   margin: 40px 0 10px 0;
+}
+
+#content .container-page .content-page.article-article p {
+  margin-bottom: 10px;
 }
 
 #content .container-page .content-page ul li {

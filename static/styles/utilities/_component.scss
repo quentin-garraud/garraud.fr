@@ -1,6 +1,6 @@
-li.tag-category-list{
+li.tag-category-list {
   list-style: none;
-  
+
   .tag-category {
     padding: 8px 15px;
     background-color: $color-primary;
@@ -8,6 +8,11 @@ li.tag-category-list{
     font-family: $body-bold;
     display: inline-block;
     margin-bottom: 20px;
+    transition: $transition;
+
+    &:hover {
+      background-color: darken($color-primary, 10);
+    }
   }
 }
 
@@ -111,7 +116,6 @@ li.tag-category-list{
       flex-direction: row;
       justify-content: space-between;
       width: 100%;
-
     }
   }
 }
@@ -152,8 +156,8 @@ ul.social-network {
         height: 20px;
         width: auto;
       }
-      
-      .tool-item-type{
+
+      .tool-item-type {
         font-size: 0.9rem;
       }
     }
