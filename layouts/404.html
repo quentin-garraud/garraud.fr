@@ -5,6 +5,8 @@
 {{ define "main" }}
   <div class="container-page" id="not-found">
     <h1>404, la page demandé n'existe pas...</h1>
-    <a href="{{ "/" | relURL }}" class="tag-category">Retour à l'accueil</a>
+    <li class="tag-category-list">
+      <a href="{{ "/" | relURL }}" class="tag-category">Retour à l'accueil</a>
+    </li>
   </div>
 {{ end }}
