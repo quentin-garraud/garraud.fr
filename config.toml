@@ -1,4 +1,4 @@
-baseURL = "https://dev.garraud.fr/"
+baseURL = "https://garraud.fr/"
 languageCode = "fr-FR"
 title = "Quentin GARRAUD"
 enableRobotsTXT = "false"
