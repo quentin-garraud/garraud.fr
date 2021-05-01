@@ -6,9 +6,11 @@
   <main class="main">
     {{ with .Site.Params.hero }}
       <section id="section-hero-banner">
-        <li class="tag-category-list">
-          <a href="/a-propos-de-moi/" class="tag-category">Moi c'est Quentin</a>
-        </li>
+        <ul>
+          <li class="tag-category-list">
+            <a href="/a-propos-de-moi/" class="tag-category">Moi c'est Quentin</a>
+          </li>
+        </ul>
         <h1 class="section-hero-title">
           Développeur <span class="decoration">,<br /></span> Designer Web
         </h1>
@@ -114,11 +116,13 @@
             alt=""
           />
           <div class="content-summary">
+          <ul>
             <li class="tag-category-list">
               <a href="/liste-d-outil-que-j-utilise/" class="tag-category"
                 >outils que j'utilise</a
               >
             </li>
+          </ul>
             <h2 class="title-project">
               Voici une petite liste d’outil que j’utilise tous les jours.
             </h2>
@@ -166,9 +170,11 @@
               title="{{ .title }}"
             />
             <div class="content-summary">
-              <li class="tag-category-list">
-                <a href="{{ .url }}" class="tag-category">{{ .tag }}</a>
-              </li>
+              <ul>
+                <li class="tag-category-list">
+                  <a href="{{ .url }}" class="tag-category">{{ .tag }}</a>
+                </li>
+              </ul>
               {{ if .blank }}
                 <a href="{{ .link }}" target="_blank" rel="noopener"
                   ><h2 class="title-project">{{ .title }}</h2></a

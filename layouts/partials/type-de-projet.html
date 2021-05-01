@@ -1,12 +1,14 @@
 {{ $taxonomy := "type-de-projet" }}
-{{ with .Param $taxonomy }}
-  <li class="tag-category-list">
-    {{ range $index, $category := . }}
-      {{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $category) -}}
-        <a href="{{ .Permalink | absURL }}" class="tag-category"
-          >{{ $category | urlize }}</a
-        >
+<ul>
+  {{ with .Param $taxonomy }}
+    <li class="tag-category-list">
+      {{ range $index, $category := . }}
+        {{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $category) -}}
+          <a href="{{ .Permalink | absURL }}" class="tag-category"
+            >{{ $category | urlize }}</a
+          >
+        {{- end -}}
       {{- end -}}
-    {{- end -}}
-  </li>
-{{ end }}
+    </li>
+  {{ end }}
+</ul>
