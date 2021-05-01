@@ -186,7 +186,7 @@
               {{ end }}
               <p class="summary">{{ .summary }}</p>
               {{ if .blank }}
-                <a href="{{ .link }}" target="_blank" class="link-button"
+                <a href="{{ .link }}" target="_blank" class="link-button" rel="noopener"
                   >{{ .cta }}
                   {{ if .icon }}
                     <i class="{{ .icon }}"></i>{{ else }}<svg
