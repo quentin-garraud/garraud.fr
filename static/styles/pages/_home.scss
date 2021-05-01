@@ -14,11 +14,11 @@ main.main{
         font-size: 48px;
         line-height: 55px;
     }
-    h4.section-hero-subtitle{
+    h2.section-hero-subtitle{
         color: $color-primary;
         letter-spacing: 1px;
         padding-bottom: 20px;
-        padding-top: 10px;
+        font-size: $h4-font-size-mobile;
     }
     p.summary{
         max-width: 100%;
@@ -54,7 +54,7 @@ main.main{
                 font-size: 90px;
                 line-height: 84px;
             }
-            h4.section-hero-subtitle{
+            h2.section-hero-subtitle{
                 font-size: 18px;
             }
             p.summary{

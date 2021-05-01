@@ -121,16 +121,16 @@ h4 {
 }
 
 a {
-  font-size: 0.75rem;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 22px;
   font-family: "Poppins Light", Arial, sans-serif;
   color: #FFFFFF;
   color: #F9C722;
 }
 
 p {
-  line-height: 18px;
-  font-size: 0.75rem;
+  line-height: 22px;
+  font-size: 16px;
   color: #FFFFFF;
   font-family: "Poppins Light", Arial, sans-serif;
 }
@@ -143,8 +143,8 @@ span {
 }
 
 strong {
-  line-height: 18px;
-  font-size: 0.75rem;
+  line-height: 22px;
+  font-size: 16px;
   color: #FFFFFF;
   font-family: "Poppins Bold", Arial, sans-serif;
   display: inline-block;
@@ -179,22 +179,22 @@ img {
     line-height: 22px;
   }
   a {
-    font-size: 1rem;
+    font-size: 18px;
   }
   p {
-    font-size: 1rem;
-    line-height: 22px;
+    font-size: 18px;
+    line-height: 25px;
   }
   strong {
-    font-size: 1rem;
-    line-height: 22px;
+    font-size: 18px;
+    line-height: 25px;
   }
   a {
-    font-size: 1rem;
+    font-size: 18px;
   }
   ul li {
-    font-size: 1rem;
-    line-height: 22px;
+    font-size: 18px;
+    line-height: 25px;
   }
 }
 
@@ -218,8 +218,8 @@ li.tag-category-list .tag-category:hover {
 }
 
 .link-button {
-  font-size: 0.75rem;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 22px;
   font-family: "Poppins Light", Arial, sans-serif;
   color: #FFFFFF;
   display: -webkit-box;
@@ -377,7 +377,7 @@ ul.social-network li.social-item a svg:hover {
     padding: 11px 20px;
   }
   .link-button {
-    font-size: 1rem;
+    font-size: 18px;
   }
   .link-button svg {
     height: 18px;
@@ -662,11 +662,11 @@ main.main {
   line-height: 55px;
 }
 
-#section-hero-banner h4.section-hero-subtitle {
+#section-hero-banner h2.section-hero-subtitle {
   color: #F9C722;
   letter-spacing: 1px;
   padding-bottom: 20px;
-  padding-top: 10px;
+  font-size: 0.875rem;
 }
 
 #section-hero-banner p.summary {
@@ -709,7 +709,7 @@ main.main {
     font-size: 90px;
     line-height: 84px;
   }
-  main.main #section-hero-banner h4.section-hero-subtitle {
+  main.main #section-hero-banner h2.section-hero-subtitle {
     font-size: 18px;
   }
   main.main #section-hero-banner p.summary {
@@ -834,8 +834,8 @@ main.main {
 }
 
 #content .container-page .content-page ul li {
-  line-height: 18px;
-  font-size: 0.75rem;
+  line-height: 22px;
+  font-size: 16px;
   color: #FFFFFF;
   font-family: "Poppins Light", Arial, sans-serif;
   display: block;

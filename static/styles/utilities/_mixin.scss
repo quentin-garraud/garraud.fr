@@ -47,24 +47,24 @@
 
 
 @mixin body-mobile{
-    line-height: 18px;
+    line-height: 22px;
     font-size: $body-font-size-mobile;
     color: $color-primary-light;
 }
 @mixin body-desktop{
     font-size: $body-font-size-desktop;
-    line-height: 22px;
+    line-height: 25px;
 }
 
 
 @mixin link-mobile {
-    font-size: $link-font-size-mobile;
-    line-height: 18px;
+    font-size: $body-font-size-mobile;
+    line-height: 22px;
     font-family: $body-light;
     color: $color-primary-light;
 }
 @mixin link-desktop {
-    font-size: $link-font-size-desktop;
+    font-size: $body-font-size-desktop;
 }
 
 
