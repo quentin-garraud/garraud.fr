@@ -170,7 +170,7 @@
                 <a href="{{ .url }}" class="tag-category">{{ .tag }}</a>
               </li>
               {{ if .blank }}
-                <a href="{{ .link }}" target="_blank"
+                <a href="{{ .link }}" target="_blank" rel="noopener"
                   ><h2 class="title-project">{{ .title }}</h2></a
                 >
                 {{ else }}
