@@ -23,17 +23,71 @@
     <div class="content-page">
       <div id="tools">
         {{ range .Params.list }}
-          <div class="tool-item-container">
-            <img
-              class="tool-item-logo"
-              src="{{ .logo }}"
-              alt="{{ .tool }} - {{ .typetool }}"
-            />
-            <div class="tool-item-text">
-              <p class="tool-item-title">{{ .tool }}</p>
-              <p class="tool-item-type">{{ .typetool }}</p>
+          {{ if eq .categorie  "web" }}
+            <div class="tool-item-container">
+              <img
+                class="tool-item-logo"
+                src="{{ .logo }}"
+                alt="{{ .tool }} - {{ .typetool }}"
+              />
+              <div class="tool-item-text">
+                <p class="tool-item-title">{{ .tool }}</p>
+                <p class="tool-item-type">{{ .typetool }}</p>
+              </div>
             </div>
-          </div>
+          {{ end }}
+          {{ if eq .categorie "analytics" }}
+            <div class="tool-item-container">
+              <img
+                class="tool-item-logo"
+                src="{{ .logo }}"
+                alt="{{ .tool }} - {{ .typetool }}"
+              />
+              <div class="tool-item-text">
+                <p class="tool-item-title">{{ .tool }}</p>
+                <p class="tool-item-type">{{ .typetool }}</p>
+              </div>
+            </div>
+          {{ end }}
+          {{ if eq .categorie "analytics" }}
+            <div class="tool-item-container">
+              <img
+                class="tool-item-logo"
+                src="{{ .logo }}"
+                alt="{{ .tool }} - {{ .typetool }}"
+              />
+              <div class="tool-item-text">
+                <p class="tool-item-title">{{ .tool }}</p>
+                <p class="tool-item-type">{{ .typetool }}</p>
+              </div>
+            </div>
+          {{ end }}
+          {{ if eq .categorie "tools" }}
+            <div class="tool-item-container">
+              <img
+                class="tool-item-logo"
+                src="{{ .logo }}"
+                alt="{{ .tool }} - {{ .typetool }}"
+              />
+              <div class="tool-item-text">
+                <p class="tool-item-title">{{ .tool }}</p>
+                <p class="tool-item-type">{{ .typetool }}</p>
+              </div>
+            </div>
+          {{ end }}
+          {{ if eq .categorie "hardware" }}
+            <div class="tool-item-container">
+              <img
+                class="tool-item-logo"
+                src="{{ .logo }}"
+                alt="{{ .tool }} - {{ .typetool }}"
+              />
+              <div class="tool-item-text">
+                <p class="tool-item-title">{{ .tool }}</p>
+                <p class="tool-item-type">{{ .typetool }}</p>
+              </div>
+            </div>
+          {{ end }}
         {{ end }}
       </div>
     </div>
