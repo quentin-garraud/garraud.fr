@@ -51,6 +51,7 @@
       }
     }
     .content-page {
+
       &.article-article {
         margin-top: 20px;
 
@@ -64,25 +65,24 @@
         p {
           margin-bottom: 10px;
         }
-      }
-      ul li {
-        @include body-mobile;
-        font-family: $body-light;
-        display: block;
-        margin-bottom: 5px;
-        margin-left: 10px;
-        list-style: inside;
-
-        &::before {
-          content: "●";
-          margin-right: 7px;
+        li {
+          @include body-mobile;
+          font-family: $body-light;
+          display: block;
+          margin-bottom: 5px;
+          margin-left: 10px;
+  
+          &::before {
+            content: "●";
+            margin-right: 7px;
+          }
         }
-      }
-      blockquote {
-        border-left: 4px solid $color-primary;
-        background-color: lighten($color-primary-dark, 2%);
-        padding: 10px;
-        margin-bottom: 10px;
+        blockquote {
+          border-left: 4px solid $color-primary;
+          background-color: lighten($color-primary-dark, 2%);
+          padding: 10px;
+          margin-bottom: 10px;
+        }
       }
       .view-images {
         .section-view-title {

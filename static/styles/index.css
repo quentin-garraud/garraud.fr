@@ -332,10 +332,10 @@ li.tag-category-list .tag-category:hover {
   border-bottom: 1px solid #3E3E3E;
 }
 
-#tools .tool-item-container img.tool-item-logo {
+#tools .tool-item-container img.tool-item-logo,
+#tools .tool-item-container svg.tool-item-logo {
   height: 20px;
   width: auto;
-  margin-right: 8px;
 }
 
 #tools .tool-item-container .tool-item-text {
@@ -350,6 +350,7 @@ li.tag-category-list .tag-category:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
+  margin-left: 8px;
 }
 
 ul.social-network {
@@ -833,7 +834,7 @@ main.main {
   margin-bottom: 10px;
 }
 
-#content .container-page .content-page ul li {
+#content .container-page .content-page.article-article li {
   line-height: 22px;
   font-size: 16px;
   color: #FFFFFF;
@@ -841,15 +842,14 @@ main.main {
   display: block;
   margin-bottom: 5px;
   margin-left: 10px;
-  list-style: inside;
 }
 
-#content .container-page .content-page ul li::before {
+#content .container-page .content-page.article-article li::before {
   content: "●";
   margin-right: 7px;
 }
 
-#content .container-page .content-page blockquote {
+#content .container-page .content-page.article-article blockquote {
   border-left: 4px solid #F9C722;
   background-color: #032c2c;
   padding: 10px;

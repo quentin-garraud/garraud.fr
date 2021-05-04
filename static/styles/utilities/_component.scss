@@ -105,10 +105,10 @@ li.tag-category-list {
     &:last-child {
       border-bottom: $border;
     }
-    img.tool-item-logo {
+    img.tool-item-logo,
+    svg.tool-item-logo {
       height: 20px;
       width: auto;
-      margin-right: 8px;
     }
 
     .tool-item-text {
@@ -116,6 +116,7 @@ li.tag-category-list {
       flex-direction: row;
       justify-content: space-between;
       width: 100%;
+      margin-left: 8px;
     }
   }
 }
