@@ -118,7 +118,7 @@
           <div class="content-summary">
           <ul>
             <li class="tag-category-list">
-              <a href="/liste-d-outil-que-j-utilise/" class="tag-category"
+              <a href="/" class="tag-category"
                 >outils que j'utilise</a
               >
             </li>
@@ -129,11 +129,15 @@
             <div class="summary" id="tools">
               {{ range .item }}
                 <div class="tool-item-container">
+                  {{ if eq .logotype "svg" }}
+                    {{.logo | safeHTML}}
+                  {{ else }}
                   <img
                     class="tool-item-logo"
                     src="{{ .logo }}"
                     alt="{{ .name }} - {{ .type }}"
                   />
+                  {{ end }}
                   <div class="tool-item-text">
                     <p class="tool-item-title">{{ .name }}</p>
                     <p class="tool-item-type">{{ .type }}</p>
@@ -142,7 +146,7 @@
               {{ end }}
             </div>
 
-            <a href="/liste-d-outil-que-j-utilise/" class="link-button"
+            <!-- <a href="/liste-d-outil-que-j-utilise/" class="link-button"
               >Afficher plus
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
                 <path
@@ -156,7 +160,7 @@
                   data-name="Tracé 2"
                   d="M10.086,7.611,7.4,4.929l.707-.707L12,8.111,8.111,12,7.4,11.293l2.682-2.682H4v-1Z"
                   transform="translate(-2 -2.111)"
-                ></path></svg></a>
+                ></path></svg></a>-->
           </div>
         </div>
       {{ end }}
