@@ -42,12 +42,6 @@ googleAnalytics = "G-T5CTMXPQWS"
     name = "Les projets"
     url = "/projets/"
     weight = 4
-
-  # [[menu.main]]
-  #   name = "Outils que j’utilise"
-  #   url = "/liste-d-outil-que-j-utilise/"
-  #   weight = 5
-
   
 
 ##### Paramètres par défauts #####
@@ -55,6 +49,7 @@ googleAnalytics = "G-T5CTMXPQWS"
     description = "Designer & Développeur Front End en alternance au CESI de Bordeaux chez Solidnames."
     favicon = "/images/favicon.png"
     slogan = "Designer & Développeur Front End chez Solidnames."
+    googleAnalyticsID = "G-T5CTMXPQWS"
 
   [[params.reseaux]]
     link = "https://www.instagram.com/garraud.fr/"
